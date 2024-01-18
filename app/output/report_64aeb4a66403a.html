@@ -1,0 +1,2888 @@
+<html>
+<style>
+    .title
+    {
+        font-family: Helvetica;
+        color: #000000;
+        background-color: #dbdbdb;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+    .datap
+    {
+        font-family: Arial;
+        color: #333333;
+        background-color: #f0f0f0;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+    }
+    .datai
+    {
+        font-family: Arial;
+        color: #333333;
+        background-color: #ffffff;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+    }
+    .header
+    {
+        font-family: Helvetica;
+        color: #5a5a5a;
+        background-color: #6B6B6B;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 16pt;
+        font-weight: bold;
+    }
+    .footer
+    {
+        font-family: Helvetica;
+        color: #5a5a5a;
+        background-color: #A3A3A3;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+    .break
+    {
+        font-family: Helvetica;
+        color: #ffffff;
+        background-color: #9a9a9a;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+    .total
+    {
+        font-family: Helvetica;
+        color: #000000;
+        background-color: #c7c7c7;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-style: italic;
+    }
+    .breakTotal
+    {
+        font-family: Helvetica;
+        color: #000000;
+        background-color: #c6c8d0;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-style: italic;
+    }
+</style>
+<table cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tr>
+<td align="left" width="88" colspan="1" class="title">Data</td>
+<td align="left" width="348" colspan="1" class="title">Paciente</td>
+<td align="left" width="98" colspan="1" class="title">Idade atual</td>
+<td align="left" width="618" colspan="1" class="title">Anamnese</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/05/2020</td>
+<td align="left" width="348" colspan="1" class="datai">VINICIUS OLIVEIRA NUNES</td>
+<td align="left" width="98" colspan="1" class="datai">28 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, SENTE GRAU DESCONFORTÁVEL PRA LONGE. EXAMES OK. SENTE CANSAÇO NO FINAL DO DIA. TRABALHA O DIA TODO NO COMPUTADOR.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">30/04/2020</td>
+<td align="left" width="348" colspan="1" class="datap">AMANDA DALALIBERA</td>
+<td align="left" width="98" colspan="1" class="datap">24 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE MAIS DIFICULDADE EM VL E A NOITE, USA BASTANTE CELULAR E COMPUTADOR. EXAMES OK. SENTE CEFALÉIA E CANSAÇO AO USAR O PC.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">19/05/2020</td>
+<td align="left" width="348" colspan="1" class="datai">BARBARA TAINARA PRATES MACHADO</td>
+<td align="left" width="98" colspan="1" class="datai">23 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE VISÃO EMBAÇADA PRA LONGE, NÃO TEM SINTOMAS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">28/05/2020</td>
+<td align="left" width="348" colspan="1" class="datap">STEPHANIE CRISTINA DA SILVA OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datap">27 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, FAZ USO CONTÍNUO, TRABALHA CONTÍNUO NO COMPUTADOR, SENTE DIFICULDADE EM VL E VP. SENTE CEFALÉIA FREQUENTE, GRAU FRACO. EXAMES OK.
+ÚLT GRAU -1.25/-0.75-1.25*165</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">FABIANE BARBACOVI</td>
+<td align="left" width="98" colspan="1" class="datai">38 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + DE 1 ANO, NÃO FAZ USO CONTÍNUO, ESTÁ SENTINDO DIFICULDADE COM RX PRA PERTO, DIFICULDADE DE FOCAR QUANDO ACORDA. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU 0.00-0.50*170/0.00-0.75*10</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">TEREZINHA ALVES DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datap">52 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO, SENTE MAIS DIFICULDADE EM VP, DIFICULDADE PRA DIRIGIR TBM. EXAMES OK. COLESTEROL EM TTO. 
+ÚLT GRAU -0.50-0.25*20/-0.25-0.50*120 AD 1.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">GISELE HAUWETTER</td>
+<td align="left" width="98" colspan="1" class="datai">38 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE CANSAÇO NOS OLHOS NO FINAL DO DIA, USA MTO COMPUTADOR, DESCONFORTO EM VL E VP. SEM SINTOMAS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LETÍCIA ZANON LARA</td>
+<td align="left" width="98" colspan="1" class="datap">15 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO E SENTE MAIS DIFICULDADE EM VL, SENTE O GRAU FRACO. EXAMES OK. FEZ TTO COM ROACUTEN POR 6 MESES E PAROU HÁ 1 MÊS.
+ÚLT GRAU -0.75-0.50*160/-1.00-0.25*170</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">VALDETE DOS SANTOS MOURA TARGANSKI</td>
+<td align="left" width="98" colspan="1" class="datai">44 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VP, MOSCAS VOLANTES. EXAMES OK. TIREOIDE EM TTO HÁ 15 ANOS. CEFALÉIA NÃO FREQUENTE. RINITE ALÉRGICA.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MONALISA NUNES</td>
+<td align="left" width="98" colspan="1" class="datap">30</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, SENTE MAIS DIFICULDADE NO OD COM RX, FAZ USO CONTÍNUO E TEM MAIS DIF. EM VL. EXAMES OK. SENTE CEFALÉIA FREQUENTE.
+ÚLT GRAU -1.00/-1.00 </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">DEBORA JACKELINE BENKER</td>
+<td align="left" width="98" colspan="1" class="datai">32 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE CANSAÇO NA VISÃO NO COMPUTADOR, CEFALÉIA FRONTAL E DIFICULDADE PRA DIRIGIR (LONGE). EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JUAN PABLO BATISTA DE CASTRO</td>
+<td align="left" width="98" colspan="1" class="datap">21 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 4 ANOS, PERDEU O ÓCULOS HÁ 1 ANO, SENTE DIFICULDADE EM VL. EXAMES OK. SENTE DOR ATRÁS DOS OLHOS NÃO FREQUENTE. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARIA CLARINDA CORDEIRO</td>
+<td align="left" width="98" colspan="1" class="datai">53 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 3 ANOS, FAZ USO CONTÍNUO, SENTE DIFICULDADE EM VL E VP E SENTE O GRAU FRACO. EXAMES OK. DIABETES E PA CONTROLADA COM MEDICAMENTO. ÚLT GLICOSE EM ABRIL 120MG/DL. SEM SINTOMAS. 
+ÚLT GRAU -0.25-1.75*90/-0.25-1.75*90 AD 1.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">DARCI DE MORAIS</td>
+<td align="left" width="98" colspan="1" class="datap">68 anos/69 anos</td>
+<td align="left" width="618" colspan="1" class="datap">06/07/2020 - ÚLT CONSULTA HÁ 3 ANOS, FAZIA USO CONTÍNUO E QUEBROU O ÓCULOS HÁ 20 DIAS, SENTE DIFICULDADE EM VL E VP. EXAMES OK HÁ 2 ANOS. SEM SINTOMAS.
+ÚLT GRAU +1.00-1.00*85/+1.00-1.00*75 AD 2.50 
+
+08/10/2021 - ÚLT CONSULTA HÁ1 ANO, FAZIA USO CONTÍNUO E QUEBROU O ÓCULOS HÁ 30 DIAS, SENTE DIFICULDADE E, VL E VP. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU +1.00-1.25*85/+1.00-1.25*85 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARIÉL REGINA FERREIRA  BOEIRA</td>
+<td align="left" width="98" colspan="1" class="datai">29 anos/31 anos</td>
+<td align="left" width="618" colspan="1" class="datai">06/07/2020 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, SENTE MAIS DIFICULDADE EM VL E SENTE O GRAU CONFORTÁVEL. SENTE CEFALÉIA E OLHO SECO. EXAMES OK. ÚLT GRAU -1.50-0.75*20/-1.50-1.25*175
+
+11/04/22 - ÚLT CONSULTA HÁ 2 ANOS, NÃO FEZ USO DA CORREÇÃO POR CAUSA DAS MÁSCARAS E LENTES ESTÃO RISCADAS, SENTE O GRAU OK. CEFALÉIA NÃO FREQUENTE. EXAMES OK.
+ÚLT GRAU -1.50-0.75*15/-1.75-0.75*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ZELINA ABATTI</td>
+<td align="left" width="98" colspan="1" class="datap">67 anos/68 anos</td>
+<td align="left" width="618" colspan="1" class="datap">06/07/2020 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO SENTE O GRAU FRACO EM VL E VP. EXAMES OK. FAZ TTO DEPRESSÃO CONTÍNUO. SEM SINTOMAS.
+ÚLT GRAU +2.00-1.00*90/+3.00-1.25*75 AD 2.75
+
+10/12/21 - ÚLT CONSULTA HÁ + 1 ANO, PASSOU COVID E SENTE QUE O GRAU FICOU RUIM DEPOIS PRA LONGE E PERTO. TTO DEPRESSÃO. SEM SINTOMAS.
+ÚLT GRAU +2.00-1.25*90/+3.00-1.50*80 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">VALÉRIA DELLANI MAFRA</td>
+<td align="left" width="98" colspan="1" class="datai">23 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 4 ANOS, LENTES RISCADAS E SENTE O GRAU FRACO E CEFALÉIA COM RX, SENTE MAIS DIFICULDADE EM VL. EXAMES OK + 2 ANOS. FAZ USO DE FLUOXETINA, SINUSITE E RINITE ALÉRGICA.
+ÚLT GRAU 0.00-0.50*40/0.00-0.25*135</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CREUSA MARIA PARIZZOTTO</td>
+<td align="left" width="98" colspan="1" class="datap">68 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 2 ANOS, NÃO FAZ USO CONTÍNUO, SENTE DESCONFORTO COM MULTIFOCAL, SENTE DIFICULDADE EM VL E VP. EXAMES OK HÁ + 2 ANOS. SEM SINTOMAS. QUEBROU ÓCULOS HÁ 1 DIA.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ARIANE MARQUES COPETTI</td>
+<td align="left" width="98" colspan="1" class="datai">45 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU LEVEMENTE FRACO, DIFICULDADE EM VL E TIRA PRA LER DE PERTO. EXAMES OK. 
+ÚLT GRAU -4.50-1.75*180/-1.50-2.50*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">06/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LUIZ EDUARDO SCHEIDT</td>
+<td align="left" width="98" colspan="1" class="datap">29 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, TRABALHA DIRETO NO COMPUTADOR E SENTE CANSAÇO FINAL DO DIA, SENSÍVEL A LUZ (AREIA NOS OLHOS). EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">07/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ADEMIR ROSTIROLLA</td>
+<td align="left" width="98" colspan="1" class="datai">50 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU FRACO EM VL E VP, ENXERGA SOMENTE COM OE, HÁ 18 ANOS MACHUCOU O OD COM UMA MADEIRA E PERDEU A VISÃO (USA PRÓTESE. EXAMES OK. 
+ÚLT GRAU 0.00/-0.75-0.25*115</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">07/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">IVONETE DE FÁTIMA JARDIM FOGAÇA</td>
+<td align="left" width="98" colspan="1" class="datap">53 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, FAZ USO CONTÍNUO, SENTE ARDÊNCIA NOS OLHOS COM RX, SENTE DIFICULDADE EM VL E VP. EXAMES OK + 1 ANO. PA CONTROLADA COM MEDICAMENTO. TEVE AVC HÁ 4 ANOS.
+ÚLT GRAU +2.00-0.50*50/+1.50-0.50*95 AD 2.00 </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">07/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">GUEULLI RODRIGUES DA LUZ</td>
+<td align="left" width="98" colspan="1" class="datai">21 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO, SENTE GRAU FRACO E CEFALÉIA FREQUENTE COM RX, SENTE MAIS DIFICULDADE EM VL. EXAMES OK. 
+ÚLT GRAU -2.00-1.25*70/-1.75-1.25*120</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">07/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LUCAS GABRIEL COLOMBO</td>
+<td align="left" width="98" colspan="1" class="datap">17 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VL, SENTE CEFALÉIA NÃO FREQUENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">07/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ALESSANDRA PAULENE DIAS BORGES VIEIRA</td>
+<td align="left" width="98" colspan="1" class="datai">21 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, ENXERGA BEM MAS SENTE CANSAÇO NOS OLHO QUANDO FICA MUITO NO COMPUTADOR. EXAMES OK. CEFALÉIA FREQUENTE. RINITE ALÉRGICA.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">07/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JÉSSICA DIANA CARDOSO FERREIRA</td>
+<td align="left" width="98" colspan="1" class="datap">26 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU FRACO, LENTES RISCADAS. SENTE CEFALÉIA NÃO FREQUENTE. EXAMES OK + 1 ANO.
+ÚLT GRAU 0.00-0.75*180/-2.00-2.00*150</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">09/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JHONNY CRISTIAN MACIEL NONATO</td>
+<td align="left" width="98" colspan="1" class="datai">31 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, PERDEU ÓCULOS EM 2018 E NÃO CONSULTOU MAIS, FAZIA USO CONTÍNUO, SENTE MAIS DIFICULDADE EM VL. SENTE CEFALÉIA FREQUENTE AO REDOR DOS OLHOS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">09/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">IVO SILVA DE OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datap">58 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE PRA PERTO HÁ + 2 ANOS. SEM SINTOMAS. EXAMES OK. FAZ TTO EPILEPSIA.
+</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">09/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">SCHAUANY MARY DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">23 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E LENTES EMBAÇADAS AR. SENTE DIFICULDADE EM VL. EXAMES OK. ENXAQUECA FREQUENTE.
+ÚLT GRAU -1.75-0.50*115/-1.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">09/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARINARA FEIL CARNEIRO</td>
+<td align="left" width="98" colspan="1" class="datap">23 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, FICA O DIA TODO NO COMPUTADOR, SENTE CANSAÇO NA VISÃO FINAL DO DIA, CEFALÉIA NÃO FREQUENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">09/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">LARISSA HELENA DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datai">22 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 5 ANOS E FEZ USO APENAS 1 ANO, SENTE FORÇAR A VISÃO PRA DIRIGIR, LEVEMENTE EMBAÇADO PRA LONGE E PERTO. SENTE CEFALÉIA E DOR NOS OLHOS FREQUENTE. EXAMES OK.
+ </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">09/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">RAMON SOUTO DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datap">47 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, SENTE MAIS DIFICULDADE EM VP. SENTE CEFALÉIA, TONTURA E CANSAÇO VISUAL. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.
+NÃO TROUXE ÚLTIMO GRAU.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">09/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ANA CLARA DA SILVA LOPES</td>
+<td align="left" width="98" colspan="1" class="datai">6 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, MÃE RELATA QUE CRIANÇA PISCA BASTANTE E TEM LACRIMEJAMENTO E RECLAMA DE ARDÊNCIA. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">09/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">PABLO MARTIN IBANEZ</td>
+<td align="left" width="98" colspan="1" class="datap">41 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, USA SOMENTE PRA PERTO, SENTE QUE ESTÁ FRACO PRA LONGE TBM. SENTE CEFALÉIA AO FORÇAR. EXAMES HÁ + 2 ANOS OK. 
+ÚLT GRAU AO +0.75 ESF.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">09/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">EVANOR DE OLIVEIRA CARVALHO</td>
+<td align="left" width="98" colspan="1" class="datai">57 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, USAVA SOMENTE PRA PERTO MAS NÃO ESTA MAIS AJUDANDO E SENTE DIFICULDADE EM VL. EXAMES OK. 
+ÚLT GRAU SEGUNDO O PACIENTE AO +1.50 ESF.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">09/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CLEYTON ARGEMIRO DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">43 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VP, NÃO TEM DIFICULDADE EM VL. EXAMES OK. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">09/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">SANDRA ALVES DE JESUS</td>
+<td align="left" width="98" colspan="1" class="datai">38 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO, LENTES RISCADAS, SENTE GRAU FRACO, CEFALÉIA, TONTURA, CANSAÇO VISUAL. EXAMES OK.
+ÚLT GRAU AO +0.50-0.50*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">09/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MILTON KUCK</td>
+<td align="left" width="98" colspan="1" class="datap">56 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, PERDEU ÓCULOS HÁ 2 ANOS E FAZIA USO SOMENTE PRA PERTO E USA UM ÓCULOS PRONTO DE 3.00 ESF. NÃO TEM DIFICULDADE EM VL. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">LUCICREUDE DO NASCIMENTO BOREL</td>
+<td align="left" width="98" colspan="1" class="datai">34 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + DE 10 ANOS, NÃO FAZ USO DE CORREÇÃO, SENTE DIFICULDADE EM VL E VP, DOR NOS OLHOS, CEFALÉIA, LACRIMEJAMENTO E COCEIRA. EXAMES OK.
+RETORNO 23/07/2020 SE SENTINDO INCOMODADA E FOI PASSADO 0.00-0.50*65/0.00-0.50*105</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARIA GORETE COSTA MARCELINO CORREIA</td>
+<td align="left" width="98" colspan="1" class="datap">47 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, FAZ USO DE CORREÇÃO, SENTE  O GRAU FRACO, SENTE DIFICULDADE EM VL E VP, SENTE CEFALÉIA SEM RX. EXAMES OK. 
+ÚLT GRAU +0.25-2.25*90/0.00-2.00*60 AD 1.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">RAFAELA PEREIRA CARDOSO</td>
+<td align="left" width="98" colspan="1" class="datai">21 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 5 ANOS, NÃO FAZ USO DE CORREÇÃO, SENTE DIFICULDADE EM VL E VP. EXAMES OK. SENTE CEFALÉIA FREQUENTE E ARDÊNCIA.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CLARISSE GARCIA BOLGADO FERNANDES</td>
+<td align="left" width="98" colspan="1" class="datap">32 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 3 ANOS, FAZIA USO CONTÍNUO SENTE MAIS DIFICULDADE EM VL E QUEBROU O RX HÁ 1 ANO. EXAMES OK. SENTE CEFALÉIA FREQUENTE.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">CASSIANA GONÇALVES DE JESUS</td>
+<td align="left" width="98" colspan="1" class="datai">20 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE CEFALÉIA FREQUENTE AO FORÇAR, COMPUTADOR E CELULAR. EXAMES OK. SEM EMBAÇAMENTO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CLAUDENIR DE JESUS</td>
+<td align="left" width="98" colspan="1" class="datap">47 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE VISÃO EMBAÇADA PRA LEITURA. CEFALÉIA NÃO FREQUENTE. EXAMES OK.
+</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">PAMELA NICOLE DA SILVA COSTA</td>
+<td align="left" width="98" colspan="1" class="datai">14 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE VISÃO EMBAÇADA PRA LONGE, FOTOFOBIA, CEFALÉIA FREQUENTE. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">RIHANNA KATLEN SILVA DA COSTA</td>
+<td align="left" width="98" colspan="1" class="datap">10 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE NO QUADRO DA ESCOLA, SENTE CEFALÉIA E DOR NOS OLHOS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">FABIANA DE FÁTIMA MIGUEL DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">44 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VP E CEFALÉIA FREQUENTE E NÁUSEAS NA LEITURA. EXAMES OK. PA CONTROLADA COM MEDICAMENTO. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">IVONETE PRATES DE SOUZA</td>
+<td align="left" width="98" colspan="1" class="datap">51 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, SENTE O OLHO QUEIMAR COM RX E EMBAÇADO PRA PERTO NA LEITURA. SENTE CEFALÉIA NÃO FREQUENTE. EXAMES OK. 
+ÚLT GRAU -0.25/-0.25-0.50*150 AD 2.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARIA ROSINETE BRITO BEZERRA</td>
+<td align="left" width="98" colspan="1" class="datai">43 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, USA SOMENTE PERTO, SENTE O GRAU FRACO E NÃO TROUXE OCS JUNTOS. NÃO SENTE DIFICULDADE EM VL. EXAMES OK.
+</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARIA LÚCIA BENTO DA COSTA</td>
+<td align="left" width="98" colspan="1" class="datap">73 anos</td>
+<td align="left" width="618" colspan="1" class="datap">FEZ CIRURGIA DE CATARATA HÁ 1 ANO NOS DOIS OLHOS, CONSULTOU DOIS MESES DEPOIS DA CIRURGIA E NÃO ESTA SENTINDO CONFORTÁVEL PRA PERTO. EXAMES OK. DIABETES CONTROLADA COM MEDICAMENTO (190 MG/DL) INSULINA. 
+ÚLT GRAU +0.75-1.75*90/0.00-.75*110 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">LUZIA LIMAS FORTUNATO</td>
+<td align="left" width="98" colspan="1" class="datai">43 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE VISÃO EMBAÇADA PRA LONGE E PERTO, ACORDA COM CEFALÉIA FRACA MAS COM FREQUÊNCIA. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">INGRID FORTUNATO CUNHA</td>
+<td align="left" width="98" colspan="1" class="datap">18 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO E SENTE O GRAU FRACO, SENTE MAIS DIFICULDADE EM VL. EXAMES OK. CEFALÉIA SEM RX.
+ÚLT GRAU -2.25/-2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JOSIELIA LIMA DE OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datai">34 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 10 MESES, PERDEU ÓCULOS HÁ 3 MESES, SENTE MAIS DIFICULDADE EM VL. SENTE CEFALÉIA NÃO FREQUENTES. EXAMES OK. FEZ RASPAGEM DO PTERÍGIO HÁ 4 ANOS NO OE. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JHOYLLANA BRILHANTE RODRIGUES</td>
+<td align="left" width="98" colspan="1" class="datap">10 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, USA MAIS NA ESCOLA, SENTE O ÓCULOS CONFORTÁVEL, TEM MANIA DE PISCAR COM FREQUÊNCIA OS OLHOS, SENTE CEFALÉIA NÃO FREQUENTE. EXAMES OK. 
+ÚLT GRAU 0.00-0.50*180/+0.75-0.75*175</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ADRIANA DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">46 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, USA SOMENTE PERTO, SENTE MAIS DIFICULDADE EM VP, USA MTO COMPUTADOR, JA FEZ USO DE MULTIFOCAL MAS NÃO SE ADAPTOU. EXAMES OK.
+ÚLT GRAU +1.50 AO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">16/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JHULI KELMA DOS SANTOS LIMA</td>
+<td align="left" width="98" colspan="1" class="datap">22 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, ENXERGA BEM MAS SENTE SINTOMAS FORTES, CEFALÉIA FREQUENTE, CANSAÇO VISUAL E DOR LEVE AO REDOR DOS OLHOS E FOTOFOBIA. EXAMES OK.
+ </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JOÃO VITOR DOS SANTOS LOCH</td>
+<td align="left" width="98" colspan="1" class="datai">11 anos/ 12 anos</td>
+<td align="left" width="618" colspan="1" class="datai">20/07/2020 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU CONFORTÁVEL, SEM RX SENTE MAIS DIFICULDADE EM VL. EXAMES OK. SEM SINTOMAS.
+
+12/03/22 - ÚLT CONSULTA HÁ 1 ANO E MEIO, FAZ USO CONTÍNUO, SENTE O GRAU FRACO PRA LONGE. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU +2.00-2.50*10/+2.75-3.00*150</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">IRACEMA THIBES DE CAMPOS</td>
+<td align="left" width="98" colspan="1" class="datap">87 anos/89 anos</td>
+<td align="left" width="618" colspan="1" class="datap">20/01/2020 - ÚLT CONSULTA HÁ 1 ANO, SENTE O GRAU DESCONFORTÁVEL PRA LONGE E PERTO. EXAMES OK. PA CONTROLADA COM MEDICAMENTO. ANALFABETA.
+
+19/10/2021 - ÚLT CONSULTA HÁ 1 ANO, ESTÁ SENTINDO O GRAU DESCONFORTÁVEL, CUIDADORA RELATA QUE ELA ENXERGA CABELO E SUJEIRA NO CHÃO MAS NÃO TEM NADA. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">GUILHERME ANTONIO DALMOLIN DE MORAES</td>
+<td align="left" width="98" colspan="1" class="datai">33 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 3 ANOS, USA SOMENTE PRA LEITURA E SENTE O GRAU FRACO. SENTE DIFICULDADE EM VL E VP. EXAMES OK (+2 ANOS). PA SEM CONTROLE COM MEDICAÇÃO.
+NÃO TROUXE ÚLTIMO GRAU.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ROSA DE SOUZA RAMOS CARLIM</td>
+<td align="left" width="98" colspan="1" class="datap">45 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO. USA SOMENTE PRA LONGE, SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU -1.00-3.50*170/-0.75-3.25*25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">DAIANE CRISTINA DAL BOSCO</td>
+<td align="left" width="98" colspan="1" class="datai">24 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 4 ANOS, NÃO FAZ USO CONTÍNUO, SENTE CEFALÉIA SEM RX, USA PRA DIRIGIR E AO FORÇAR A VISÃO. EXAMES OK. 
+ÚLT GRAU +0.50-0.25*95/+0.50-0.50*75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">NICOLY PEREIRA VELHO</td>
+<td align="left" width="98" colspan="1" class="datap">25 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 1 ANO, SENTE O GRAU FRACO PRA LONGE. SEM SINTOMAS. EXAMES OK. SINUSITE E RINITE ALÉRGICA.
+ÚLT GRAU -2.75-0.50*170/-2.50-0.50*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARISETE DAS GRAÇAS DA SILVA FARIAS</td>
+<td align="left" width="98" colspan="1" class="datai">47 anos/49 anos</td>
+<td align="left" width="618" colspan="1" class="datai">20/07/2020 - ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU FRACO PRA LONGE E PERTO. EXAMES OK. FAZ TTO PRA ENXAQUECA.
+ÚLT GRAU +1.25-0.50*95/+0.75 AD 1.00
+
+29/06/22 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTINDO O GRAU FRACO EM VL E VP. EXAMES OK. TTO ENXAQUECA. FOTOFOBIA.
+ÚLT GRAU +1.50-0.50*75/+1.50-0.50*100 AD 1.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">TEREZINHA MALGARIDA FERREIRA ROSA</td>
+<td align="left" width="98" colspan="1" class="datap">65 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 5 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO PRA LONGE E PERTO. SEM SINTOMAS. EXAMES OK. 
+ÚLT GRAU +1.75/+2.25-1.00*90 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">DANIEL PEPER</td>
+<td align="left" width="98" colspan="1" class="datai">35 anos</td>
+<td align="left" width="618" colspan="1" class="datai">20/07/2020 - ÚLT CONSULTA HÁ + 3 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU FRACO PRA LONGE. SEM SINTOMAS. EXAMES OK. 
+ÚLT GRAU -1.00-0.25*180/-1.50-0.25*165
+
+11/12/21 - ÚLT CONSULTA HÁ 1 ANO MAS NÃO FEZ O ÓCULOS PRESCRITO. ESTA USANDO O ÓCULOS DE 4 ANOS ATRÁS. SENTE O GRAU FRACO PRA LONGE. EXAMES OK.
+ÚLT GRAU -1.00-0.25*180/-1.50-0.25*165</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JÚLIA MOREIRA</td>
+<td align="left" width="98" colspan="1" class="datap">19 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 3 ANOS, NÃO USA CORREÇÃO E SENTE DIFICULDADE EM VL. CEFALÉIA FREQUENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MATHEUS BOTIN</td>
+<td align="left" width="98" colspan="1" class="datai">15 anos/17 anos</td>
+<td align="left" width="618" colspan="1" class="datai">20/07/2020 - ÚLT CONSULTA HÁ 2 ANOS, FAZIA USO CONTÍNUO E PERDEU RX HÁ 1 MÊS, SENTE MAIS DIFICULDADE EM VL. EXAMES OK.
+
+01/07/22 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E ESTÁ SENTINDO CEFALÉIA COM O RX HÁ ALGUNS DIAS. MAIS DIFICULDADE EM VL. EXAMES OK.
+ÚLT GRAU -0.50-2.50*5/-0.25-2.50*170
+</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARINA COUTO DE OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datap">40 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 5 ANOS, FAZ USO CONTÍNUO MAS SENTE GRAU DESCONFORTÁVEL E LENTES ARRANHADAS. SENTE CEFALÉIA FREQUENTE. EXAMES OK. TTO DEPRESSÃO CONTÍNUO.
+ÚLT GRAU +0.25-0.50*100/0.00-0.50*130</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">LETÍCIA GRANDO</td>
+<td align="left" width="98" colspan="1" class="datai">23 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E QUEBROU O ÓCULOS HÁ 4 MESES, SENTE DIFICULDADE EM VL E VP. EXAMES OK. SENTE CEFALÉIA FREQUENTE. 
+ÚLT GRAU -0.50-0.75*165/-0.50-0.50*15</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARIA CRISTINA ARGENTA</td>
+<td align="left" width="98" colspan="1" class="datap">51 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE MAIS DIFICULDADE EM VP. EXAMES OK. SENTE CEFALÉIA NÃO FREQUENTE.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">THAYSA DE OLIVEIRA MATTOS</td>
+<td align="left" width="98" colspan="1" class="datai">29 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 5 ANOS NO DIAGNÓSTICO DE TOXOPLASMOSE, ADQUIRIU CATARATA PELA TOXO E FEZ CIRURGIA NO OD EM NOV/2019 E OE JAN/2020, PRIMEIRA CONSULTA PÓS CIRÚRGICA E SENTE DIFICULDADE EM VP. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">20/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">SIRLEI NUNES ALVES</td>
+<td align="left" width="98" colspan="1" class="datap">50 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO E SENTE O GRAU FRACO PRA PERTO. EXAMES OK. PA CONTROLADA COM MEDICAMENTO. FAZ TTO PRA EPILEPSIA E DEPRESSÃO.
+ÚLT GRAU +1.00-0.75*65/+1.50-1.00*85 AD 2.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">21/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARIA ZULEIKA WAMBOSKY CRESTANI</td>
+<td align="left" width="98" colspan="1" class="datai">38 anos</td>
+<td align="left" width="618" colspan="1" class="datai">CONSULTOU HÁ ALGUNS ANOS FEZ ÓCULOS PRA DESCANSO MAS NÃO USOU, SENTE CEFALÉIA (ENXAQUECA) FREQUENTE, SENSAÇÃO DE INCHAÇO. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">21/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ESENIR LUCHESI MACIEL</td>
+<td align="left" width="98" colspan="1" class="datap">49 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, ESTA SENTINDO DIFICULDADE EM VP. SEM SINTOMAS. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">21/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">CLAUDECIR AGOSTINHO FRIEBEL</td>
+<td align="left" width="98" colspan="1" class="datai">42 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 3 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU QUE NÃO AJUDA PRA PERTO. DIFICULDADE SEM RX PRA LONGE. EXAMES OK. SINUSITE
+ÚLT GRAU -1.25-1.25*85/-1.00-2.00*70</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">21/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JOSENILDE AZEVEDO LOPES</td>
+<td align="left" width="98" colspan="1" class="datap">24 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VL, SENSIBILIDADE LUZ BRANCA NO TRABALHO, CANSAÇO VISUAL. EXAMES OK. CEFALÉIA NÃO FREQUENTE.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">21/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">LUCAS ARISTIDES</td>
+<td align="left" width="98" colspan="1" class="datai">17 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 4 ANOS, NÃO FAZ USO CONTÍNUO E ESTA SEM RX HÁ 1 ANO, SENTE DIFICULDADE EM VL. EXAMES OK. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">23/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARCOS MATEUS PINHEIRO MONTEIRO</td>
+<td align="left" width="98" colspan="1" class="datap">17 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO, SENTE MAIS DIFICULDADE EM VL E SENTE O GRAU FRACO. CEFALÉIA NA LUZ (FOTOFOBIA). EXAMES OK. TTO ASMA E ALERGIA.
+ÚLT GRAU 0.00-0.50*175/0.00-0.50*170</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">23/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">IVALDINA ALVES GONÇALVES</td>
+<td align="left" width="98" colspan="1" class="datai">53 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 2 ANOS, SENTE O GRAU FRACO, FAZIA USO CONTÍNUO. SENTE DIFICULDADE EM VL E VP. EXAMES OK. DIABETES CONTROLADA COM MEDICAMENTO (ULT. GLICEMIA 350MG/DL). 
+ÚLT GRAU -0.50-0.50*90/0.00-0.25*90 AD. 2.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">23/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARIA FRANCISCA DA SILVEIRA</td>
+<td align="left" width="98" colspan="1" class="datap">45 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 1 ANO, FAZIA USO CONTÍNUO, MAIS DIFICULDADE EM VP. EXAMES OK. SEM SINTOMAS FREQUENTES.
+ÚLT GRAU 0.00-0.25*15/0.00-0.50*180 AD 1.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">23/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ANDREZA NASCIMENTO SOUZA</td>
+<td align="left" width="98" colspan="1" class="datai">24 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO E SENTE O GRAU FRACO. SENTE MAIS DIFICULDADE EM VL. EXAMES OK. SENTE CEFALÉIA SEM RX.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">23/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CLEMAIR DA SILVA DE AZEREDO</td>
+<td align="left" width="98" colspan="1" class="datap">60 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU FRACO EM VL E VP, COCEIRA E CANSAÇO VISUAL. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU +2.50-0.50*90/+2.50-0.50*75 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">23/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">GILMAR ANTÔNIO STEFFN</td>
+<td align="left" width="98" colspan="1" class="datai">53 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, HÁ 26 ANOS TEVE UMA DOENÇA AUTO IMUNE E PERDEU PARTE DA VISÃO NO OE, RELATA QUE PALPEBRA PAROU HÁ 1 SEMANA E ABAIXOU (PTOSE OD). SENTE DIFICULDADE EM VL E VP. EXAMES OK.
+ÚLT GRAU 0.00-1.25*75/0.00+0.75*150 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">23/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ALVICIO OSCAR KLEIN</td>
+<td align="left" width="98" colspan="1" class="datap">52 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 5 ANOS, SENTE MAIS DIFICULDADE EM VP E LEVEMENTE PRA LONGE. EXAMES OK. SEM SINTOMAS FREQUENTES.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">23/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">RODRIGO DA SILVEIRA MARINS</td>
+<td align="left" width="98" colspan="1" class="datai">23 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, SENTE DIFICULDADE MAIOR PRA LONGE E GRAU AINDA ESTA CONFORTÁVEL. SEM SINTOMAS. 
+ÚLT GRAU -0.75/-1.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">23/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">KELINTON TEIXEIRA DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datap">35 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, HÁ 3 MESES TEVE ACIDENTE NO OE COM CHAVE DE FENDA MACHUCANDO A CÓRNEA, FEZ TTO CLÍNICO COM CICATRIZAÇÃO E REGENERAÇÃO DE TECIDO COM LC E REAVALIAÇÃO DE LEUCOMA (NÃO VOLTOU DEVIDO AO COVID) MAS SENTE VISÃO EMBAÇADA. NÃO SENTE DIFICULDADE NO OD. EXAMES OK. 
+VEIO AVALIAR O OLHO QUE NÃO MELHORA.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">23/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">RAPHAEL DA SILVA MALCHER</td>
+<td align="left" width="98" colspan="1" class="datai">25 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 5 ANOS E NÃO ESTA FAZENDO USO DE CORREÇÃO, SENTE MAIS DIFICULDADE EM VL MAIS NO OD. EXAMES OK. CEFALÉIA FREQUENTE.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">30/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ANDRÉ LUIZ GAVETTI</td>
+<td align="left" width="98" colspan="1" class="datap">56 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 4 ANOS, SENTE O GRAU CONFORTÁVEL, FAZ USO CONTÍNUO, FAZ TTO DIABETES (CONTROLADO) E PA CONTROLADA COM MEDICAMENTO. SEM SINTOMAS.
+ÚLT GRAU -6.50-2.50*180/-4.75-1.00*155 AD 2.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">30/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARILEIA ADRIANO MEDEIROS</td>
+<td align="left" width="98" colspan="1" class="datai">49 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANO, NÃO FAZ USO POR VERGONHA MAS SENTE GRAU CONFORTÁVEL E BASTANTE DIFICULDADE EM VL E PERTO TBM. EXAMES OK. TOMA RIVOTRIL CONTÍNUO.
+ÚLT GRAU -0.75-0.50*180/-1.00-0.25*120 AD 1.25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">30/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARIA RAIMUNDA GONZAGA DE FREITAS</td>
+<td align="left" width="98" colspan="1" class="datap">82 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, NÃO FAZ USO CONTÍNUO, USA MAIS PRA PERTO E SENTE MAIS DIFICULDADE EM VP. EXAMES OK. DIABETES E PA CONTROLADA COM MEDICAMENTO. ESTÁ SENTINDO MAIS DESCONFORTO NO OE, VISÃO MAIS EMBAÇADA. CATARATA AO QUASE HÁ 10 ANOS.
+ÚLT GRAU +0.75-1.00*170/+0.75 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">30/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">LUANE RAQUEL GUSMÃO DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">22 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE CANSAÇO NA VISÃO NA LEITURA, OE MAIS EMBAÇADO. SEM SINTOMAS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">30/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">DIONISIO ANTONIO DA CRUZ NETO</td>
+<td align="left" width="98" colspan="1" class="datap">25 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE VISÃO EMBAÇADA NA LEITURA E CANSAÇO VISUAL. EXAMES OK. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">30/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">WELLINGTON MORAES DE OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datai">30 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, NO EXAME DE CNH MÉDICO FALOU DO PROBLEMA PRA LONGE. SEM SINTOMAS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">30/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">NICOLAS ALVES DE BORBA</td>
+<td align="left" width="98" colspan="1" class="datap">8 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, MÃE RELATA QUE ELE FECHA OS OLHOS PRA VER PRA LONGE. SEM SINTOMAS. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">30/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">QUIMBERLY BRENDA MOURA MORAES</td>
+<td align="left" width="98" colspan="1" class="datai">44 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 10 ANOS, NÃO FAZ USO DE CORREÇÃO, EM JANEIRO/2020 TEVE MENINGITE VIRAL E SEGUNDO MÉDICO ESTA COM 40% DA VISÃO NO OD. SENTE DIFICULDADE EM VL E VP. EXAMES OK. SENTE CEFALÉIA FREQUENTE. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">30/07/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JORGE LUIZ CUNHA</td>
+<td align="left" width="98" colspan="1" class="datap">45 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, ESTÁ SENTINDO DIFICULDADE EM VP, PRA LONGE NÃO SENTE DIFICULDADE. SEM SINTOMAS. SINUSITE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">30/07/2020</td>
+<td align="left" width="348" colspan="1" class="datai">HEVILYN KELLYN COSTA</td>
+<td align="left" width="98" colspan="1" class="datai">26 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 11 MESES, PERDEU RX HÁ 3 MESES E NÃO FAZIA USO CONTÍNUO, SENTE DIFICULDADE EM VL, CEFALÉIA E TONTURA AO FORÇAR. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">06/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARGARETE GUESSER</td>
+<td align="left" width="98" colspan="1" class="datap">51 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E QUEBROU O ÓCULOS ONTEM, SENTE O GRAU FRACO EM VL E VP COM RX. EXAMES OK. CEFALÉIA FREQUENTE.
+ÚLT GRAU AO +0.50 AD 1.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">06/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JERRY ADRIANI NAPOLEÃO</td>
+<td align="left" width="98" colspan="1" class="datai">52 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 3 ANOS, USA SOMENTE PRA PERTO E SENTE O GRAU FRACO. NÃO SENTE DIFICULDADE EM VL. EXAMES OK. HIPERTENSO, CARDÍACO E PRÉ DIABÉTICO. 
+ÚLT GRAU +1.50-0.50*90/1.50 ESF.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">06/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ELIDIANE FÁTIMA DE BRITO</td>
+<td align="left" width="98" colspan="1" class="datap">21 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, QUEBROU O ÓCULOS HÁ 7 MESES E FAZIA USO CONTÍNUO, SENTE MAIS DIFICULDADE EM VL. SENTE CEFALÉIA FREQUENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">06/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ADRIANA CRISTINA DE JESUS</td>
+<td align="left" width="98" colspan="1" class="datai">50 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU MAIS FRACO PRA PERTO E LENTES ARRANHADAS. EXAMES OK. SENTE CEFALÉIA MAIS FREQUENTE NO ÚLTIMOS DIAS.
+ÚLT GRAU +5.00-0.50*180/+5.50-0.75*175 AD 2.25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">06/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JOÃO LUCIANO DE MATOS</td>
+<td align="left" width="98" colspan="1" class="datap">71 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 2 ANOS, FAZIA USO CONTÍNUO E PERDEU O OCS. SENTE DIFICULDADE EM VL E VP. SEM SINTOMAS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">06/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ISADORA ALEXANDRE ALVES</td>
+<td align="left" width="98" colspan="1" class="datai">15 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO HÁ + 6 MESES, SENTE CEFALÉIA FREQUENTE. EXAMES OK.
+ÚLT GRAU -1.25/-1.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">06/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">RUBIANE THAIS LEITE</td>
+<td align="left" width="98" colspan="1" class="datap">39 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT. CONSULTA HÁ + 1 ANO E NÃO FOI PRESCRITO RX, SENTE DIFICULDADE EM VL MAIS NO OD. EXAMES OK. ESTA EM TTO DE CISTO BACKER NA PERNA DIREITA. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">06/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JÚLIA ELENA ROSA DE SOUZA</td>
+<td align="left" width="98" colspan="1" class="datai">9 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, NÃO ESTA FAZENDO USO DA CORREÇÃO HÁ 4 MESES, SENTE VISÃO EMBAÇADA PRA LONGE. EXAMES OK. CEFALÉIA NÃO FREQUENTE.
+ÚLT GRAU -0.50-0.75*180/0.00-0.75*10</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">06/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ISABELI SOFIA ROSA DE SOUZA</td>
+<td align="left" width="98" colspan="1" class="datap">9 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS E NÃO FOI PRESCRITO RX, SENTE CEFALÉIA E DOR NO OLHO AO FORÇAR, VISÃO LEVEMENTE EMBAÇADA EM LONGE E PERTO. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">10/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">NAIARA ZAMBONI</td>
+<td align="left" width="98" colspan="1" class="datai">30 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VL, EMBAÇADO, RINITE ALÉRGICA. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LARISA DE MELO</td>
+<td align="left" width="98" colspan="1" class="datap">19 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO, COSTURA E SENTE FORÇAR A VISÃO. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU -0,25-2,25*165/-1,00-1,75*10</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">10/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JOSIAS MARCELO ALVES</td>
+<td align="left" width="98" colspan="1" class="datai">48 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA. SENTE DIFICULDADE PRA LEITURA, FAZ USO DE ÓCULOS PRONTO. TEVE CEFALÉIA AO FORÇAR. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ODILA FÁTIMA BETIATO</td>
+<td align="left" width="98" colspan="1" class="datap">60 anos/63 anos</td>
+<td align="left" width="618" colspan="1" class="datap">10/08/2020 - ÚLT CONSULTA HÁ 6 ANOS, HÁ 1 ANO SENTE O GRAU FRACO EM VL E VP. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU +1.00/+0.75 AD 1.75
+
+07/06/23 - ÚLT CONSULTA HÁ + 2 ANOS, SENTE O GRAU CONFORTÁVEL MAS LENTES EMBAÇADAS E INCOMODAM. SEM SINTOMAS E EXAMES OK.
+ÚLT GRAU +1.25/+1.25 AD 2.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">10/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">LEONCIO RAMOS</td>
+<td align="left" width="98" colspan="1" class="datai">62 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO E SENTE GRAU FRACO EM VL E VP. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU +0.50-0.50*20/+0.50-0.25*35 AD 2.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CLAUDIA ALVES DE BOLBA LEITE</td>
+<td align="left" width="98" colspan="1" class="datap">26 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, NÃO ESTA USANDO ÓCULOS PQ SENTE DESCONFORTO E CEFALÉIA. SENTE DIFICULDADE EM VL. EXAMES OK. PA CONTROLADA COM MEDICAMENTO. LACRIMEJA E ARDE COM FREQUENCIA MAIS NO OE.
+ÚLT GRAU 0.00-0.50*95/0.00-0.75*90 </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">10/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">LEOCIR GOMES DE CAMPOS</td>
+<td align="left" width="98" colspan="1" class="datai">57 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU CONFORTÁVEL, LENTES DANIFICADAS. EXAMES OK. PRÉ DIABETES CONTROLADA COM MEDICAMENTO. SEM SINTOMAS.
+ÚLT GRAU +1.75-1.25*75/+1.50-0.50*110 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">GABRIEL ALVES DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datap">19 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO. SENTE CEFALÉIA AO FORÇAR, COSTURAR E DIRIGIR. EXAMES OK. 
+ÚLT GRAU -3.50-0.25*35/-3.25-0.75*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">10/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">PAULO ANTONIO MARIANI</td>
+<td align="left" width="98" colspan="1" class="datai">53 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO, TEM MAIS DIFICULDADE EM VP. SENTE O GRAU FRACO. SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU 0.00/0.00-0.25*120 AD 2.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">RAFAEL LUZA</td>
+<td align="left" width="98" colspan="1" class="datap">34 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU DESCONFORTÁVEL MAIS A NOITE. SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU -2.50-1.00*80/-2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">10/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">CLEIDIANE DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datai">24 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, NÃO FAZ USO CONTÍNUO, SENTE O GRAU FRACO, SENTE MAIS DIFICULDADE EM VL. EXAMES OK. SENTE CEFALÉIA FREQUENTE.
+ÚLT GRAU +0.25-0.25*145/+0.25-0.25*30</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JISELE CAMILA TONETTA</td>
+<td align="left" width="98" colspan="1" class="datap">19 anos/24 anos/25 anos</td>
+<td align="left" width="618" colspan="1" class="datap">24/05/16 - ÚLT CONSULTA HÁ 2 ANOS. SENTE RX FRACA EM VL, LENTES RISCADAS. EXAMES OK. SEM SINTOMATOLOGIA.
+ÚLT GRAU -3.00-1.00*180/-3.00-0.25*180
+
+10/08/20 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO PRA LONGE. SENTE CEFALÉIA FREQUENTE E CANSAÇO VISUAL. EXAMES OK.
+ÚLT GRAU -2.50-1.00*5/-2.75-0.50*170
+
+14/01/22 - ÚLT CONSULTA HÁ + 1 ANO, QUEBROU A HASTE, FAZ USO CONTÍNUO, LENTES RISCADAS. SENTE MAIS DIFICULDADE EM VL. EXAMES OK. GESTAÇÃO HÁ 2 MESES. 
+ÚLT GRAU -2.75-1.00*5/-2.75-1.25*170</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">10/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">TIAGO BARRETO DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">27 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, SENTE GRAU FRACO EM VL E VP, CEFALÉIA E CANSAÇO FREQUENTE. EXAMES OK.
+ÚLT GRAU +3.50-1.00*150/+3.25-1.25*25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">SILVANA SOMARIVA DE OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datap">31 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO. CANSAÇO VISUAL, CEFALÉIA MAIS FREQUENTE. EXAMES OK.
+ÚLT GRAU -1.25-0.75*180/-1.50-0.50*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">11/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">LEONI DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datai">37 anos/39 anos</td>
+<td align="left" width="618" colspan="1" class="datai">11/08/2020 - ÚLT CONSULTA HÁ 9 MESES MAS NÃO CONSEGUIU USAR A RX PRESCRITA -1.25-3.50*175/-1.25-3.50*5, USA LC COM TRANSPOSIÇÃO (-1.25-2.75*170/-1.25-2.75*10). SENTE CEFALÉIA AO USAR RX ANTIGA (2 ANOS) E GRAU FRACO. 
+ÚLT GRAU RX -0.75-2.75*165/-1.00-3.00*160
+
+13/05/22 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO DE LC E ESTÁ SENTINDO OS OLHOS QUEIMANDO NOS ÚLTIMOS DIAS QUANDO COLOCA A LENTE, E OLHO SECO, CEFALÉIA FREQUENTE E O GRAU CONFORTÁVEL. EXAMES OK.
+ÚLT GRAU -1.50-2.75*170/-1.50-2.75*5</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">11/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ROSANE APARECIDA COLASSO DE MORAES</td>
+<td align="left" width="98" colspan="1" class="datap">32 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO, SENTE MAIS DIFICULDADE EM VP E MAIOR DIFICULDADE NO OD. SENTE CEFALÉIA AO FORÇAR. EXAMES OK. 
+ÚLT GRAU 0.00/+0.25-0.50*90</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">11/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MÔNICA COMIN</td>
+<td align="left" width="98" colspan="1" class="datai">45 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 4 ANOS, SENTE O GRAU FRACO E NÃO FAZ USO CONTÍNUO, MULTIFOCAL. SENTE CEFALÉIA FREQUENTE USA CELULAR CONTINUO. EXAMES OK.
+ÚLT GRAU 0.00-0.50*20/0.00-0.25*45 AD 1.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">11/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MORGANA ANDRES CAMPOS</td>
+<td align="left" width="98" colspan="1" class="datap">16 anos/18 anos</td>
+<td align="left" width="618" colspan="1" class="datap">11/08/2020 - ÚLT CONSULTA HÁ 2 ANOS, USAVA CONTÍNUO E PERDEU FAZ 1 MÊS, SENTE MAIS DIFICULDADE EM VL. EXAMES OK. SENTE CEFALÉIA NÃO FREQUENTE. 
+
+23/02/22 - ÚLT CONSULTA HÁ 1 ANO E MEIO, FAZIA USO CONTÍNUO E QUEBROU HÁ 2 DIAS, MAIS DIFICULDADE EM VL. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU +2.75-0.75*85/+2.50-0.75*80 </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">11/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">RONALDO DOUGLAS RICCI</td>
+<td align="left" width="98" colspan="1" class="datai">48 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU FRACO EM VL E VP. EXAMES OK. SENTE CEFALÉIA NÃO FREQUENTE. TEVE TOXOPLASMOSE (SEGUNDO PACIENTE) HÁ 5 ANOS E PERDEU UMA PARTE DA VISÃO DE LONGE AO.
+ÚLT GRAU +0.25/0.00-0.25*120 AD 1.25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">11/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">DERIQUI ALESSIO</td>
+<td align="left" width="98" colspan="1" class="datap">9 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, FAZIA USO CONTÍNUO E QUEBROU FAZ 3 MESES. SENTE DIFICULDADE EM VL, CEFALÉIA NO COMPUTADOR. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">11/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">TATIANE FERREIRA</td>
+<td align="left" width="98" colspan="1" class="datai">28 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 7 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU FRACO E LENTES ARRANHADAS, DIFICULDADE PRA DIRIGIR A NOITE. SENTE CEFALÉIA FREQUENTE. EXAMES OK.
+ÚLT GRAU +0.50-2.00*175/0.00-1.75*165</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">11/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JULIANA MARIA DIAS</td>
+<td align="left" width="98" colspan="1" class="datap">28 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 9 MESES, PERDEU ÓCULOS HÁ 3 SEMANAS E FAZIA USO CONTÍNUO. SENTE DIFICULDADE EM VL, CEFALÉIA AO FORÇAR. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">13/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">FLAVIANA DE OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datai">25 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, SENTE O GRAU FRACO, FAZ USO CONTÍNUO. ESTA SENTINDO DOR OCULAR MAIS NO OD. EXAMES OK. 
+ÚLT GRAU -1.25/-1.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">13/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARISA DE CARVALHO VARGAS</td>
+<td align="left" width="98" colspan="1" class="datap">64 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VP (LEITURA). SEM SINTOMAS. EXAMES OK (8 MESES).
+NÃO SENTE DIFICULDADE EM VL.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">13/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ALEX FERREIRA DE OLIVAR</td>
+<td align="left" width="98" colspan="1" class="datai">39 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ULT CONSULTA HA 1 ANO. USA O OCULOS ANTIGO PQ O NOVO NAO SENTE DIFERENCA NA VISAO. TEM MAIS DIFICULDADE EM VP. EXAMES OK. DIABETES CONTROLADA COM MEDICAMENTO (ULT GLICEMIA 150MG/DL).
+ULT GRAU +0.50-0.25*75/0.00-0.25*120
+USA AO +1.25 PRA PERTO PRESCRITO HA + 5 ANOS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">13/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">GABRIEL DE OLIVAR</td>
+<td align="left" width="98" colspan="1" class="datap">10 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, NAO TEM DIFICULDADE SEGUNDO O PACIENTE, PAI RELATA QUE ELE FORCA PRA VER DE PERTO. SEM SINTOMAS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">13/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">EMANUELLY LAURENTINO DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datai">7 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, NAO TEM DIFICULDADE PRA ENXERGAR, PAI RELATA QUE A CRIANCA TEM CASQUINHAS NAS PALPEBRAS. EXAMES OK. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">20/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">AMANDA DA SILVA RIBEIRO ALVES</td>
+<td align="left" width="98" colspan="1" class="datap">16 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO, SENTIA O GRAU BOM E PERDEU ÓCULOS HÁ 3 DIAS. EXAMES OK. RINITE ALÉRGICA, CEFALÉIA SEM RX E SENTE DIFICULDADE EM VL E VP.
+ÚLT GRAU +275-2.00*100/+1.50-1.25*80</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">20/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">IRES LIOTTO CORREIA</td>
+<td align="left" width="98" colspan="1" class="datai">54 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU CONFORTÁVEL MAS SENTE MAIS FRACO EM VL. EXAMES OK. 
+ÚLT GRAU +1.75/+1.75-0.50*105 AD 2.25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">20/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MAIARA RODRIGUES AGUIAR</td>
+<td align="left" width="98" colspan="1" class="datap">31 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU EM VL. SEM SINTOMAS. FAZ TTO CONTÍNUO PRA ASMA.
+ÚLT GRAU -0.75-0.25*150/-1.25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">20/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">SHEILA MARIA ALEXANDRE CEZARIO</td>
+<td align="left" width="98" colspan="1" class="datai">43 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, USA ÓCULOS PRONTO, SENTE DIFICULDADE EM VP MAIOR E VL LEVE, ENXAQUECA FREQUENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">20/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">KERLEI APARECIDA MOTA BARTOLOMEU</td>
+<td align="left" width="98" colspan="1" class="datap">48 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 6 MESES, TEM DIABETES E NÃO SENTE MAIS O GRAU CONFORTÁVEL PRA LONGE. ÚLT GLICEMIA 99MG/DL (HOJE). SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU +0.50-0.50*115/0.00-0.50*120 AD 2.25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">20/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARIA DA GRAÇA CARATI BANDEIRA</td>
+<td align="left" width="98" colspan="1" class="datai">69 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, SENTE O GRAU FRACO PRA LONGE E PERTO. SENTE CEFALÉIA. EXAMES OK. PA CONTROLADA COM MEDICAMENTO, FALA DIFICULTADA.
+ÚLT GRAU +0.75-0.75*25/-0.25 ADD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">20/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CAROLYNE BARBOSA MEIRELLES</td>
+<td align="left" width="98" colspan="1" class="datap">20 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO E QUEBROU ÓCULOS HÁ 2 DIAS, SENTE MAIS DIFICULDADE EM VL. EXAMES OK. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">20/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">SCHEILI COSTA</td>
+<td align="left" width="98" colspan="1" class="datai">41 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE MAIS DIFICULDADE EM VP. SENTE CEFALÉIA NÃO FREQUENTE, MAIS NA LEITURA. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">20/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CLAUDINEI NOHAUS</td>
+<td align="left" width="98" colspan="1" class="datap">43 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE MAIS DIFICULDADE EM VP, SENTE FORÇAR NO CELULAR E CEFALÉIA AO FORÇAR LEITURA, LACRIMEJAMENTO. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">20/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">WEVERTON JUNIOR SANTANA</td>
+<td align="left" width="98" colspan="1" class="datai">25 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, SENTE MAIS DIFICULDADE EM VL E SENTE O GRAU FRACO. SENTE FOTOFOBIA E CEFALÉIA. EXAMES OK.
+ÚLT GRAU -0.25/-0.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">20/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ANTONIO JOSÉ DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">65 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, NÃO FAZ USO CONTÍNUO, SOMENTE PERTO, NÃO TROUXE ÓCULOS. LEVOU UMA PANCADA NO LADO DIREITO DA CABEÇA HÁ + 35 ANOS. EXAMES OK. SEM SINTOMAS.
+</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARIA CRISTINA DA SILVA FERREIRA</td>
+<td align="left" width="98" colspan="1" class="datai">65 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO MAIS PRA PERTO, CANSAÇO NO COMPUTADOR E CELULAR. EXAMES OK. PA CONTROLADA COM MEDICAMENTO. 
+ÚLT GRAU +0.25-0.25*130/+0.25-0.25*55 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">EDIPO JOSE FANTIN</td>
+<td align="left" width="98" colspan="1" class="datap">32 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 5 ANOS, FAZIA USO CONTÍNUO MAS PERDEU O ÓCULOS E NÃO USA HÁ ANOS, SENTE DIFICULDADE EM VL NO TESTE DO TRABALHO DE AV. SENTE CEFALÉIA AO DIRIGIR A NOITE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MAICON DOS SANTOS DE BARROS</td>
+<td align="left" width="98" colspan="1" class="datai">29 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZIA USO CONTÍNUO E ESTA SEM RX HÁ 2 MESES, SENTE MAIS DIFICULDADE EM VP. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JOÃO FRANCISCO FENILI</td>
+<td align="left" width="98" colspan="1" class="datap">37 anos/39 anos</td>
+<td align="left" width="618" colspan="1" class="datap">24/08/2020 - PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VL E VP. NÃO TEM SINTOMAS. EXAMES OK. 
+
+12/01/22 - ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO, SENTE O GRAU CONFORTÁVEL, MAIS SENSIBILIDADE NA LUZ. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU -0.75-1.50*45/-0.75-0.75*85</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARCIA APARECIDA DE ALMEIDA</td>
+<td align="left" width="98" colspan="1" class="datai">52 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, NÃO FAZ USO CONTÍNUO, SENTE MAIS DIFICULDADE EM VP E O GRAU FRACO. EXAMES OK HÁ 2 MESES.
+ÚLT GRAU +0.75/+0.50-0.50*110 AD 2.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ARMANDO LUIS ARCARI</td>
+<td align="left" width="98" colspan="1" class="datap">59 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 5 ANOS, USAVA SOMENTE PERTO E QUEBROU O ÓCULOS. DIZ NÃO SENTIR DIFICULDADE EM VL. NÃO ENXERGA NO OE HÁ + DE 20 ANOS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">GILMAR ANTONIO DE OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datai">44 anos/46 anos</td>
+<td align="left" width="618" colspan="1" class="datai">24/08/2020 - ÚLT CONSULTA HÁ + 2 ANOS, USAVA SOMENTE PERTO E SENTE O GRAU FRACO MAS NÃO TROUXE. EXAMES OK. SENTE CEFALÉIA NÃO FREQUENTE. NÃO SENTE DIFICULDADE EM VL.
+
+24/05/23 - ÚLT CONSULTA HÁ + 2 ANOS, NÃO ESTÁ FAZENDO USO CONTÍNUO PORQUE SENTE O GRAU DESCONFORTÁVEL, MAIOR DIFICULDADE EM VP. SEM SINTOMAS E EXAMES OK.
+ÚLT GRAU +0.50-0.50*95/+0.25-0.50*25 AD 1.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">DAIANE ROBERTO DE LINHARES LUBENOW CASTILHO</td>
+<td align="left" width="98" colspan="1" class="datap">24 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE A VISÃO EMBAÇADA PRA LONGE E LEITURA HÁ 2 MESES. EXAMES OK. SENTE CEFALÉIA FREQUENTE E USA CONTINUO COMPUTADOR E CELULAR.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">GLEIZE MASSIGNANI DANIELI</td>
+<td align="left" width="98" colspan="1" class="datai">37 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA 5 ANOS, NÃO FAZ USO CONTÍNUO, SENTE MAIS DIFICULDADE EM VL E PERDEU O ÓCULOS HÁ 3 SEMANAS. EXAMES OK E SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">IVONE EVA MAY</td>
+<td align="left" width="98" colspan="1" class="datap">47 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, FAZ ARTESANATO E SENTE DIFICULDADE EM VP, LONGE NÃO SENTE DIFICULDADE. EXAMES OK. FAZ TTO REUMATISMO. CEFALÉIA QUANDO FORÇA DE PERTO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">EVELIN KAUANE LINS</td>
+<td align="left" width="98" colspan="1" class="datai">18 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 10 ANOS MAS NÃO USA RX HÁ 7 ANOS, SENTE DIFICULDADE EM VL. EXAMES OK. SEM SINTOMAS FORTES, CEFALÉIA QUANDO FORÇA PRA VER MELHOR DE LONGE.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JULIA LOPES DE ALBUQUERQUE</td>
+<td align="left" width="98" colspan="1" class="datap">18 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO. EXAMES OK. ANSIEDADE E SÍNDROME DO PANICO EM TTO (PROSAC).
+ÚLT GRAU 0.00-0.25*125/0.00-0.25*35
+
+19/02/21 - ÚLT CONSULTA HÁ 6 MESES, FAZ USO CONTÍNUO E SENTE O GRAU FRACO, CONTINUA TTO DE ANSIEDADE COM PROSAC. EXAMES OK.
+ÚLT GRAU +0.25-0.50*115/+0.25-0.25*45</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ADRIANA DAMBROS TREIN</td>
+<td align="left" width="98" colspan="1" class="datai">47 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO EM VL E VP. EXAMES OK. 
+ÚLT GRAU +1.00-0.50*15/+0.75-0.50*180 AD 1.25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">DAHIANA RAQUEL FERNANDEZ DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">20 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE E VISÃO EMBAÇADA EM VL E VP, CEFALÉIA AO FORÇAR MESMO EM POUCO TEMPO. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ONORIO BENINI</td>
+<td align="left" width="98" colspan="1" class="datai">60 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 4 ANOS, FEZ MULTIFOCAL MAS NÃO SE ADAPTOU E USA MAIS PRA PERTO, PERDEU ÓCULOS HÁ 1 MÊS, SENTIA O GRAU FRACO. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">KATIA REGINA NORDT</td>
+<td align="left" width="98" colspan="1" class="datap">40 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VL, ROSTO EMBAÇADO. EXAMES OK. SENTE CEFALÉIA FREQUENTE.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">24/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">GUSTAVO GRAMBOWSKI BORGES</td>
+<td align="left" width="98" colspan="1" class="datai">16 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VL, EMBAÇAMENTO. SEM SINTOMAS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">25/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">DANIELE CASTILHO DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">24 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO AO FORÇAR A VISÃO, COMPUTADOR E TV EM CASA. SENTE O GRAU FRACO E SENTINDO CEFALÉIA COM RX. EXAMES OK.
+ÚLT GRAU -0.25-0.25*5/0.00-0.50*170</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">25/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JANETE MARIA CIVIDINI DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">46 anos/ 48 anos</td>
+<td align="left" width="618" colspan="1" class="datai">25/08/2020 - PRIMEIRA CONSULTA, SENTE DIFICULDADE PRA VER DE LONGE, EMBAÇADO. SEM SINTOMAS. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.
+
+25/07/22 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO EM VL E VP. SEM SINTOMAS. EXAMES OK. PA E TIREOIDE CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU -0.25-1.25*120/0.00-1.25*55 AD 1.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">25/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">SOLANGE APARECIDA PARANNA</td>
+<td align="left" width="98" colspan="1" class="datap">50 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 5 ANOS, NÃO SENTIU O GRAU CONFORTÁVEL E NÃO FEZ USO DA CORREÇÃO, SENTE MAIS DIFICULDADE EM VP E SENTE CEFALÉIA NÃO FREQUENTE AO FORÇAR. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">25/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARIA IVONETE SARMENTO</td>
+<td align="left" width="98" colspan="1" class="datai">48 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE DIFICULDADE MAIOR EM VP, LEVE EMBAÇAMENTO PRA LONGE TBM. NÃO TEM SINTOMAS. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">25/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">INEZ MARIA SCUSSIATO COMIN</td>
+<td align="left" width="98" colspan="1" class="datap">75 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, FAZIA USO CONTÍNUO MAS FEZ CIRURGIA DE CATARATA NOS DOIS OLHOS EM DEZEMBRO/2019 E SENTE QUE O OD FICOU RUIM PÓS CIRÚRGICO. EXAMES OK. PA E DIABETES CONTROLADA COM MEDICAMENTO (GLICEMIA HOJE 130MG/DL).
+ÚLT GRAU +1.00-4.25*25/+1.00-4.25*155 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">25/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">SILVANA APARECIDA BENEDETTI NICOLINI</td>
+<td align="left" width="98" colspan="1" class="datai">47 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE DIFICULDADE NA VP. SENTE CEFALÉIA AO FORÇAR FREQUENTEMENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">25/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ALINE ANTUNES</td>
+<td align="left" width="98" colspan="1" class="datap">23 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 5 ANOS, NÃO ESTAS USANDO CORREÇÃO HÁ MTOS ANOS, SENTE DIFICULDADE EM VL E CANSAÇO NOS OLHOS DIARIAMENTE, LEITURA E COMPUTADOR. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">27/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARIA LIDIA SILVEIRA PORFIRIO</td>
+<td align="left" width="98" colspan="1" class="datai">65 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS DO ÓCULOS EM USO MAS FEZ CONSULTA HÁ 1 ANO E NÃO FEZ ÓCULOS, SUSPEITA DE CATARATA AGUARDANDO CIRURGIA. EXAMES OK. SENTE MAIS DIFICULDADE EM VP. 
+ÚLT GRAU +4.00/+3.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">27/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">DALILA CARDOSO DE OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datap">55 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO E SENTE O GRAU FRACO E DESCONFORTÁVEL, SENTE DIFICULDADE EM VL E VP. EXAMES OK. PA E DIABETES CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU 0.00-2.25*115/+0.25-2.25*75 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">27/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">HAMILTON PEREIRA FELICIDADE</td>
+<td align="left" width="98" colspan="1" class="datai">67 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FEZ A CIRURGIA DE CATARATA NOS DOIS OLHOS EM JANEIRO/2020, SENTE VISÃO FRACA PRA LEITURA. EXAMES OK. PA CONTROLADA COM MEDICAMENTO. SEM SINTOMAS CONTÍNUO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">27/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">AIRTO PAULO PEREIRA</td>
+<td align="left" width="98" colspan="1" class="datap">49 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO E SENTE O GRAU FRACO PRA PERTO. EXAMES OK. FAZ TTO DEPRESSÃO.
+ÚLT GRAU +0.25-0.50*75/+0.50 AD 1.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">27/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">IZABELA BARBOSA GOULART</td>
+<td align="left" width="98" colspan="1" class="datai">22 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 4 ANOS, QUEBROU O ÓCULOS E SENTE CEFALÉIA COM CORREÇÃO, TEM DIFICULDADE EM VL E VP. EXAMES OK. 
+ÚLT GRAU AO +0.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">27/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARLI ADIR ARISTIDES</td>
+<td align="left" width="98" colspan="1" class="datap">54 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, USAVA MAIS PRA LEITURA E PERDEU HÁ 3 MESES. SEM SINTOMAS. EXAMES OK. FAZ TTO TIREÓIDE.
+ÚLT GRAU +0.75/+1.00 AD 2.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">27/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MICHELI TAINÃ GONÇALVES DA COSTA</td>
+<td align="left" width="98" colspan="1" class="datai">28 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 10 MESES, FAZ USO CONTÍNUO E ESTA SENTINDO O GRAU FRACO. SENTE MAIS DIFICULDADE EM VL. EXAMES OK. 
+ÚLT GRAU </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">27/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ISABEL CRISTINA DE SOUZA</td>
+<td align="left" width="98" colspan="1" class="datap">41 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE CEFALÉIA FREQUENTE QUANDO PRECISA FOCAR A VISÃO, TELEVISÃO E LEITURA. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">27/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">IULE SANTOS DE JESUS</td>
+<td align="left" width="98" colspan="1" class="datai">24 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTINUO, SENTE O GRAU OK MAS ESTA SENTINDO CEFALÉIA COM ÓCULOS DEPOIS DE UM TEMPO NO COMPUTADOR. EXAMES OK. 
+ÚLT GRAU +2.50-3.00*180/+3.25-3.75*5</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">27/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">SILVANA DA SILVA SOARES FURTADO</td>
+<td align="left" width="98" colspan="1" class="datap">34 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, RELATA SENTIR CEFALÉIA FREQUENTE AO FORÇAR TANTO LONGE QUANTO PERTO. EXAMES OK.
+</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">27/08/2020</td>
+<td align="left" width="348" colspan="1" class="datai">CARLOS ANTONIO RODRIGUES DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">55 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU CONFORTÁVEL, LENTES RISCADAS. EXAMES OK. 
+ÚLT GRAU +1.50-0.50*180/+2.00-0.75*60 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">27/08/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MÁRCIA CRISTINA ARAGÃO DIAS </td>
+<td align="left" width="98" colspan="1" class="datap">45 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA GÁ 2 ANOS, SENTE O GRAU FRACO, USA SOMENTE PRA LONGE E TEM DIFICULDADE EM VP TBM. EXAMES OK. TTO TIREÓIDE. 
+ÚLT GRAU -0.75-1.25*180/-1.00-1.25*170</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">03/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">LECI FERREIRA BATISTA</td>
+<td align="left" width="98" colspan="1" class="datai">63 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO APÓS CIRURGIA DE CATARATA EM MARÇO NO MUTIRÃO. QUER USAR SOMENTE PERTO. SENTE O GRAU DESCONFORTÁVEL. EXAMES OK .
+ÚLT GRAU 0.00-0.50*115/0.00-1.25*90 AD 2.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">03/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">VICTÓRIA JAQUES GOMES</td>
+<td align="left" width="98" colspan="1" class="datap">11 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS E NÃO ESTA USANDO CORREÇÃO. SENTE BASTANTE DOR NOS OLHOS USANDO O CELULAR E EMBAÇADO PRA LONGE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">03/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">KELY LOPES DE JESUS</td>
+<td align="left" width="98" colspan="1" class="datai">36 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ QUASE 2 ANOS, FAZ USO CONTÍNUO, SENTE GRAU FRACO E DIFICULDADE EM VL E VL. EXAMES OK. CEFALÉIA FREQUENTE.
+ÚLT GRAU +0.50-1.50*30/+0.50-1.50*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">03/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">GEISYBELL RIBEIRO DA SILVA NOVAES</td>
+<td align="left" width="98" colspan="1" class="datap">38 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 10 ANOS E NÃO FAZ USO DE CORREÇÃO, SENTE DIFICULDADE EM VL, SEM SINTOMAS. EXAMES OK. RINITE ALÉRGICA (COCEIRA).</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">03/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ORIDIA CELESTINA DE SOUZA</td>
+<td align="left" width="98" colspan="1" class="datai">73 anos</td>
+<td align="left" width="618" colspan="1" class="datai">FEZ CIRURGIA DE CATARATA HÁ 1 ANO E 5 MESES E NÃO ESTA USANDO CORREÇÃO E SENTE DIFICULDADE EM VP. SENTE CEFALÉIA E CANSAÇO AO USAR MTO O CELULAR. EXAMES OK.
+</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">03/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARIA EDUARDA ANDRADE DE SANTANA</td>
+<td align="left" width="98" colspan="1" class="datap">11 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 2 ANOS, SENTE O GRAU CONFORTÁVEL, SEM SINTOMAS. ROTINA. EXAMES OK.
+ÚLT GRAU -2.00-1.25*15/-3.00-0.75*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">12/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">EULINA PARAGUAY GASPAR</td>
+<td align="left" width="98" colspan="1" class="datai">59 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS E PERDEU RX HÁ 1 MÊS E TEM DIFICULDADE EM VL E VP, FAZIA USO DE MULTIFOCAL. SEM SINTOMAS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">12/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">TATIANE TERRES MARTINS</td>
+<td align="left" width="98" colspan="1" class="datap">35 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 10 ANOS E FAZ USO DA RX, SENTE O GRAU FRACO E DESCONFORTÁVEL. SENTE CEFALÉIA AO FAZER LEITURA. EXAMES OK. NÃO TROUXE O ÓCULOS. SENTE VISÃO EMBAÇADA PRA LONGE.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">12/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ISMAEL ALVES DE JESUS CRUZ</td>
+<td align="left" width="98" colspan="1" class="datai">25 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU FRACO, SE ACIDENTOU DE MOTO HÁ 6 ANOS E PERDEU A VISÃO DO OD. NÃO SENTE DIFICULDADE PRA VER COM O OE. EXAMES OK. 
+ÚLT GRAU AO +0.25 ESF.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">12/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ALDILEIA NADIR MACHADO</td>
+<td align="left" width="98" colspan="1" class="datap">56 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU DESCONFORTÁVEL E LENTES ARRANHADAS. SENTE FORÇAR MAIS PRA PERTO. EXAMES OK. 
+ÚLT GRAU AO +1.50 ESF AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">12/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">VITORIA DOS SANTOS FRATON</td>
+<td align="left" width="98" colspan="1" class="datai">18 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 5 ANOS, NÃO ESTA FAZENDO USO DE CORREÇÃO, SENTE MAIS DIFICULDADE PRA LONGE E A NOITE. EXAMES OK. SENTE CEFALÉIA AO FORÇAR CELULAR.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">12/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">THIAGO PEREIRA ALVES</td>
+<td align="left" width="98" colspan="1" class="datap">27 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS E NÃO SE ADAPTOU COM O GRAU E NÃO USA CORREÇÃO. SENTE DIFICULDADE EM VL, SENTE CEFALÉIA E CANSAÇO. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ALVINTIA CORREA DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">85 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 8 ANOS, NÃO FAZ USO CONTÍNUO, SENTE O GRAU FRACO, LACRIMEJAMENTO E DIFICULDADE EM VL E VP. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU +1.75-0.25*30/+1.00-0.25*80 AD 2.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MILTON VOLPATO</td>
+<td align="left" width="98" colspan="1" class="datap">79 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 10 ANOS, QUEBROU O ÓCULOS, SENTE MAIS DIFICULDADE EM VP. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">LEANDRA APARECIDA AMALCABURIO</td>
+<td align="left" width="98" colspan="1" class="datai">31 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, ESTA SENTINDO DIFICULDADE PRA LONGE E ARDÊNCIA E CANSAÇO AO USAR MTO O COMPUTADOR. EXAMES OK. TTO COM ANTI CONVULSIVO. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">IVONIR ZARPELON</td>
+<td align="left" width="98" colspan="1" class="datap">55 anos/57 anos</td>
+<td align="left" width="618" colspan="1" class="datap">14/09/2020 - ÚLT CONSULTA HÁ 3 ANOS, NÃO FAZ USO CONTÍNUO, SENTE MAIS DIFICULDADE EM VP, SENTE O GRAU FRACO EM VL E VP. EXAMES OK.
+ÚLT GRAU +0.25-0.75*110/+0.25-0.75*115 AD 2.25
+
+01/08/22 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU CONFORTÁVEL. ROTINA. SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU 0.00-0.75*90/+0.50-0.50*105 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">SANDRA KARLING </td>
+<td align="left" width="98" colspan="1" class="datai">26 anos/28 anos </td>
+<td align="left" width="618" colspan="1" class="datai">14/09/20 - ÚLT CONSULTA HÁ 3 ANOS, USA MAIS PRA DESCANSO AO TRABALHAR  NO COMPUTADOR, SENTE O GRAU OK. ROTINA. EXAMES OK. SENTE CEFALÉIA NÃO FREQUENTE.
+ÚLT GRAU 0.00-0.25*40/0.00-0.50*135
+
+26/10/22 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO QUANDO FORÇA E USA TELAS, ESTÁ SENTINDO OS OLHOS CANSADOS COM CORREÇÃO E CEFALÉIA FINAL DO DIA. EXAMES OK.
+ÚLT GRAU +0.25-0.50*60/+0.25-0.50*135</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">VALDIR DE LEMOS</td>
+<td align="left" width="98" colspan="1" class="datap">59 anos/61 anos</td>
+<td align="left" width="618" colspan="1" class="datap">14/09/2020 - ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU FRACO EM VL, PERDEU A VISÃO DO OE HÁ MAIS DE 20 ANOS EM UMA COMPLICAÇÃO DE CIRURGIA DE CATARATA. EXAMES OK.
+ÚLT GRAU -3.25-1.75*115/-3.00 (PESO) AD 2.50
+
+12/06/23 - ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO EM VL E VP. EXAMES OK.
+ÚLT GRAU -3.25-2.00*115/-3.00 PESO AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ALMERINDA RIBEIRO DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datai">71 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO MAS ESTA SENTINDO O GRAU FRACO, SENTE DIFICULDADE EM VL E VP. EXAMES OK. 
+ÚLT GRAU +2.00-0.25*150/+1.50-0.50*165 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">FELIPE LUIS REBELATTO</td>
+<td align="left" width="98" colspan="1" class="datap">31 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM LEITURA MAIS NO PERÍODO DA NOITE. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">OSNIR LOPES DIAS</td>
+<td align="left" width="98" colspan="1" class="datai">52 anos/53 anos</td>
+<td align="left" width="618" colspan="1" class="datai">14/09/2020 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO E LENTES RISCADAS. SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU +0.50-0.75*160/+0.25-0.75*170 AD 2.25
+
+02/07/21 - ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO SENTE O GRAU OK, ARMAÇÃO QUEBRADA E LENTES ARRANHADAS. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU +1.00-1.00*175/+0.75-1.00*180 AD 2.50
+</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LILIAN SARA DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">20 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 10 ANOS, FAZ USO DE CORREÇÃO E SENTE O GRAU DESCONFORTÁVEL E FOTOFOBIA. SEM SINTOMAS. NÃO TROUXE ÚLTIMO ÓCULOS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">OSNI BOTIN</td>
+<td align="left" width="98" colspan="1" class="datai">50 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE MAIS DIFICULDADE EM VP. SEM SINTOMAS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">VITORIA LUPATO</td>
+<td align="left" width="98" colspan="1" class="datap">18 anos/21 anos</td>
+<td align="left" width="618" colspan="1" class="datap">14/09/2020 - ÚLT CONSULTA HÁ 1 ANO. FAZ USO CONTÍNUO E QUEBROU ÓCULOS HÁ 1 SEMANA, SENTE DIFICULDADE MAIOR PRA LONGE E SENTE CEFALÉIA MAIS FREQUENTE SEM RX. EXAMES OK. ÚLR GRAU 0.00-0.50*180/0.00-0.75*55
+
+05/04/23 - ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU CONFORTÁVEL, QUER TROCAR A ARMAÇÃO. CEFALÉIA FREQUENTE (ENXAQUECA). EXAMES OK.
+ÚLT GRAU -0.25-0.50*165/-0.25-0.75*60
+</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">EVA APARECIDA GERVASIO BIASIOLO</td>
+<td align="left" width="98" colspan="1" class="datai">53 anos/56 anos</td>
+<td align="left" width="618" colspan="1" class="datai">14/09/2020 - ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO E SENTE AS LENTES ARRANHADAS E GRAU OK. SENTE MAIS DIFICULDADE EM VP. EXAMES OK. ÚLT GRAU 0.00-0.25*160/0.00 AD 2.00.
+
+30/06/23 - ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU CONFORTÁVEL MAS LENTES MUITO RISCADAS, MAIOR DIFICULDADE EM VP. EXAMES OK E SEM SINTOMAS.
+ÚLT GRAU AO +1.00 ESF AD 2.25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LORIZETE CONSTANTINO DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datap">39 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VL, VISÃO EMBAÇADA E SENTE O OLHO ARDER FREQUENTE, CEFALÉIA NÃO FREQUENTE. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">WESLEY HENRIQUE TOFOLI</td>
+<td align="left" width="98" colspan="1" class="datai">18 anos/20 anos</td>
+<td align="left" width="618" colspan="1" class="datai">14/09/2020 - PRIMEIRA CONSULTA, SENTE ARDÊNCIA E CEFALÉIA FREQUENTE USANDO O COMPUTADOR. TEM DIFICULDADE EM VL. TEVE UM ACIDENTE NO OD COM PAPEL HÁ 2 ANOS. EXAMES OK.
+
+23/11/22 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E ESTÁ SENTINDO EMBAÇADO PRA LONGE COM O ÓCULOS E LENTES EMBAÇADAS TBM. MAIS DIFICULDADE EM VL E SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU -1.00-0.50*115/0.00-0.50*35</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARTHA APARECIDA RODRIGUES</td>
+<td align="left" width="98" colspan="1" class="datap">51 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU FRACO. TEM UMA PRESSÃO NO OLHO QUANDO USA MTO CELULAR. EXAMES OK. DIABETES CONTROLADA COM INSULINA HOJE 135MG/DL)
+ÚLT GRAU +1.00-1.00*110/+1.00-0.25*80 AD 2.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARLI LASTA RIBEIRO</td>
+<td align="left" width="98" colspan="1" class="datai">54 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 6 ANOS, NÃO FAZ USO CONTÍNUO, TEM LABIRINTITE, SENTE O GRAU DESCONFORTÁVEL. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU +0.50-0.25*75/+0.50-0.25*120 AD 2.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">THAYMÊ ALEXIA TAFFAREL DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">19 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DOR OCULAR E USA MUITO COMPUTADOR E CELULAR. TEM CEFALÉIA E CANSAÇO VISUAL. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">EDITH PASSOLD</td>
+<td align="left" width="98" colspan="1" class="datai">69 anos/71 anos</td>
+<td align="left" width="618" colspan="1" class="datai">14/09/2020 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU DESCONFORTÁVEL. SENTE DIFICULDADE EM VL E VP. EXAMES OK. FAZ TTO TIREOIDE. 
+ÚLT GRAU +4.75-1.00*90/+5.75-0.50*80 AD 2.75
+
+10/07/2023 - ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO E RISCOU AS LENTES HÁ 2 MESES E ESTÁ USANDO P GRAU ANTERIOR, DIFICULDADE EM VL E VP. EXAMES OK E TTO TIREOIDE E MEDICAMENTO PRA PRÉ DIABETES.
+ÚLT GRAU +4.75-0.75*90/+5.75-0.50*85 AD 3.00
+
+</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">15/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">THAYS ARAKIELI TESK</td>
+<td align="left" width="98" colspan="1" class="datap">20 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 10 ANOS E NÃO ESTA FAZENDO USO DE CORREÇÃO, TRABALHA O DIA TODO NO COMPUTADOR E SENTE CANSAÇO DO FINAL DO DIA AO ASSISTIR AULA. SENTE PESO E CEFALÉIA. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">15/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">BEATRIZ CRISTINA ANTUNES DE OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datai">64 anos/65 anos</td>
+<td align="left" width="618" colspan="1" class="datai">15/09/20 - ÚLT CONSULTA HÁ + 2 ANOS, QUEBROU O ÓCULOS HÁ + 1 MÊS E FAZIA USO CONTÍNUO, SENTE DIFICULDADE EM VL E VP. ESTÁ SENTINDO CEFALÉIA E COCEIRA NOS OLHOS SEM RX. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.
+GRAU DO RX ANTERIOR +1.50-1.00*105/+1.00-0.75*90 AD 2.75
+
+14/01/22 - ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO E ESTÁ SENTINDO O GRAU FRACO EM VL E VP. EXAMES OK. PA CONTROLADA COM MEDICAMENTO. SEM SINTOMAS.
+ÚLT GRAU +1.75-1.25*70/+1.25-0.25*105 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">15/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">VERONI TEREZINHA PINTO SANTORO</td>
+<td align="left" width="98" colspan="1" class="datap">56 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 5 ANOS, PERDEU HÁ 2 ANOS, SENTE DIFICULDADE EM VL E VP. EXAMES OK. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">15/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">LAUDECI SANTORO</td>
+<td align="left" width="98" colspan="1" class="datai">51 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, ESTA SENTINDO DIFICULDADE EM VP. LETRAS EMBAÇADAS. SEM SINTOMAS. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">15/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">SIRLEI SALETE TRENTO</td>
+<td align="left" width="98" colspan="1" class="datap">47 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 7 ANOS, USA CORREÇÃO MAS NÃO TROUXE E SENTE MAIS DIFICULDADE EM VP E VISÃO EMBAÇADA PRA VER TV. EXAMES OK. DIABETES E PA CONTROLADA COM MEDICAMENTO (ÚLT GLICEMIA 117MG/DL). SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">15/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ROSALINA MACHADO</td>
+<td align="left" width="98" colspan="1" class="datai">55 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU CONFORTÁVEL. EXAMES OK. PA CONTROLADA COM MEDICAMENTO. SENTE CEFALÉIA FREQUENTE.
+ÚLT GRAU +1.50-0.50*80/+1.25-0.50*100 AD 2.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">15/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ROSALINA MACHADO</td>
+<td align="left" width="98" colspan="1" class="datap">55 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU CONFORTÁVEL. EXAMES OK. PA CONTROLADA COM MEDICAMENTO. SENTE CEFALÉIA FREQUENTE.
+ÚLT GRAU +1.50-0.50*80/+1.25-0.50*100 AD 2.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">15/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">NELSON GENIS</td>
+<td align="left" width="98" colspan="1" class="datai">55 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, NÃO USA HÁ 4 MESES, LENTES ARRANHADAS. SENTE DIFICULDADE EM VL E VP. EXAMES OK.
+NÃO TROUXE ÚLTIMO ÓCULOS. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">15/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">EMANUELE BATISTA CABRERA</td>
+<td align="left" width="98" colspan="1" class="datap">10 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO, SENTE O GRAU FRACO EM VL. SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU -0.50-1.00*165/-4.25-0.75*30</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">15/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JULIANE ANDRESSA DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">30 anos/31 anos</td>
+<td align="left" width="618" colspan="1" class="datai">15/09/2020 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE CEFALÉIA COM O ÓCULOS E O GRAU FRACO. EXAMES OK. 
+ÚLT GRAU -1.75-2.75*25/-2.25-3.00*155
+
+18/02/22 - ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO E SENTE O GRAU CONFORTÁVEL. ROTINA PRA FAZER ÓCULOS SOLAR. ENXAQUECA. EXAMES OK. 
+ÚLT GRAU -2.50-4.00*25/-3.50-4.00*155</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">17/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">PEDRO PAULO MACHADO</td>
+<td align="left" width="98" colspan="1" class="datap">65 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 5 ANOS, ESTÁ USANDO ÓCULOS EMPRESTADO, SENTE DIFICULDADE EM VL E VP. EXAMES OK.  SENTE CEFALÉIA NÃO FREQUENTE.
+ÚLT GRAU +1.50-0.75*90/+1.50-0.75*90 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">17/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ADILSON ALVES</td>
+<td align="left" width="98" colspan="1" class="datai">71 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 5 ANOS, NÃO ESTÁ MAIS USANDO A ÚLTIMA RX POR ESTAR FRACA, SENTE DIFICULDADE EM VL E VP. EXAMES OK. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">17/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ANA EMELLY NICACIO BORGES</td>
+<td align="left" width="98" colspan="1" class="datap">14 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO PRA LONGE. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU -2.75/-3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">17/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">FILIPE LUIZ BORGES</td>
+<td align="left" width="98" colspan="1" class="datai">33 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU LEVEMENTE MAIS FRACO PRA LONGE. EXAMES OK. CEFALÉIA NÃO FREQUENTE.
+ÚLT GRAU -1.00-350*180/-1.00-5.75*5</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">17/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CLAUDETE VIEIRA CARDOSO</td>
+<td align="left" width="98" colspan="1" class="datap">60</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 5 ANOS, USA SOMENTE PERTO E ESTÁ SENTINDO FRACO E LEVE DIFICULDADE EM VL. EXAMES OK. PA CONTROLADA COM MEDICAMENTO. SEM SINTOMAS. DIZ TER DIAGNÓSTICO DE DESCOLAMENTO DE VÍTREO MAS NÃO ATRAPALHA A VISÃO.
+ÚLT GRAU 0.00-0.50*90/-0.25-.50*75 AD 2.25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">17/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">FABIANE PURIFICAÇÃO</td>
+<td align="left" width="98" colspan="1" class="datai">33 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 5 ANOS, NÃO ESTA MAIS USANDO CORREÇÃO, SENTE CEFALÉIA E CANSAÇO FREQUENTE. VISÃO MAIS EMBAÇADA EM VL. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">17/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">FÁBIO LEANDRO</td>
+<td align="left" width="98" colspan="1" class="datap">18 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO, GRAU FRACO E LENTES EMBAÇADAS. EXAMES OK. SEM SINTOMAS FREQUENTES. 
+ÚLT GRAU +2.50-1.50*30/+2.75-2.25*150</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">17/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARINEI DA SILVA MATOS</td>
+<td align="left" width="98" colspan="1" class="datai">52 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 2 ANOS, NÃO ESTÁ USANDO CORREÇÃO PQ O GRAU ESTÁ DESCONFORTÁVEL, ESTÁ SENTINDO COCEIRA E CEFALÉIA FREQUENTE. EXAMES OK. PA CONTROLADA COM MEDICAMENTO. PAI DIABÉTICO.
+ÚLT GRAU 0.00 AD 1.25 AO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">17/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MONICA ROBELIA LESSA BATISTA</td>
+<td align="left" width="98" colspan="1" class="datap">39 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 1O ANOS E NÃO USA RX. ESTÁ SENTINDO CEFALÉIA FREQUENTE E EMBARALHA PRA LER. EXAMES OK. FAZ TTO BRONQUITE E ASMA. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">17/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARIA LETÍCIA PIRES QUEIROZ</td>
+<td align="left" width="98" colspan="1" class="datai">14 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, SENTE O GRAU FRACO E LENTES EMBAÇADAS. ROTINA. SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU -5.50-3.50*180/-6.00-3.00*170</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">17/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">VICTÓRIA FERNANDES DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datap">18 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, NÃO ESTÁ USANDO CORREÇÃO, SENTE DIFICULDADE EM VL E VP. SEM SINTOMAS. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">17/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">CHARLES FURTADO</td>
+<td align="left" width="98" colspan="1" class="datai">45 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE MAIS DIFICULDADE EM VP. SEM SINTOMAS. EXAMES OK. TTO EPILEPSIA. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">17/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARIA DO ROZARIO DA SILVA ALMEIDA</td>
+<td align="left" width="98" colspan="1" class="datap">46 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO EM VL E VP. USA SOMENTE PERTO. EXAMES OK. 
+ÚLT GRAU AO +0.25 ESF AD 2.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">17/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">PEDRO LUIZ CASIRAGHI ORTIZ</td>
+<td align="left" width="98" colspan="1" class="datai">68 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO, SENTE O GRAU DESCONFORTÁVEL. SEM SINTOMAS. EXAMES OK. PASSOU COVID HÁ 2 MESES E FICOU NA UTI. PA CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU AO +3.00 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">24/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">HAMILTON DUARTE SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">64 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 10 ANOS, NÃO FAZ USO DE RX E SENTE DIFICULDADE EM VP E VL. EXAMES OK. RINITE ALÉRGICA. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">24/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">TAUANE DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">14 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 1 ANO, SENTE O GRAU FRACO PRA LONGE, SENTE MAIS CONFORTO COM O GRAU ANTERIOR AO ÚLTIMO (-1.25/-0.75). EXAMES OK.
+ÚLT GRAU -0.25-0.50*30/-0.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">24/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">RAQUEL ZENAIDE SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">51 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 3 ANOS, QUEBROU O ÓCULOS HÁ 1 ANO, SENTE MAIS DIFICULDADE EM VP. SEM SINTOMAS. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">24/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">BRUNO VIEIRA DE ARAÚLO</td>
+<td align="left" width="98" colspan="1" class="datai">20 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, ESTA SENTINDO DIFICULDADE PRA LER TELA DO COMPUTADOR E PRA LONGE TBM. SEM SINTOMAS. EXAMES OK. TTO EPILEPSIA.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">24/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">FILIPPE FRASSETTO</td>
+<td align="left" width="98" colspan="1" class="datap">29 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, NÃO FAZ USO CONTÍNUO, SENTE DIFICULDADE EM VP MAS MAIS EM VL. SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU +0.50-4.00*10/+2.50-6.00*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">24/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">PAULO GABRIEL DE LACERDA</td>
+<td align="left" width="98" colspan="1" class="datai">23 anos</td>
+<td align="left" width="618" colspan="1" class="datai">FEZ USO DE ÓCULOS NA ESCOLA INFANTIL, ESTÁ SENTINDO DIFICULDADE EM VL E EMBAÇADO. CEFALÉIA FREQUENTE E AO REDOR DOS OLHOS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">24/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">PEDRA SANTANA DUARTE</td>
+<td align="left" width="98" colspan="1" class="datap">50 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO E SENTE O GRAU FRACO. SEM SINTOMAS. EXAMES OK. EM TESTE DE PA.
+ÚLT GRAU +0.50/+0.50 AD 1.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">24/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JOSÉ RIBEIRO MATIAS</td>
+<td align="left" width="98" colspan="1" class="datai">50 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE QUEIMAÇÃO NOS OLHOS NO CELULAR E TV E LEITURA, SENTE CEFALÉIA FREQUENTE. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ELIZIANE QUAGLIOTTO</td>
+<td align="left" width="98" colspan="1" class="datap">35 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VL E TRABALHA NA LUZ BRANCA E SENTE RUIM PRA PERTO TBM, CEFALÉIA MAIS FREQUENTE HÁ ALGUNS MESES. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JÉSSICA BRANGER</td>
+<td align="left" width="98" colspan="1" class="datai">22 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE MAIS DIFICULDADE EM VL. FAZ USO DE CELULAR, SENTE CEFALÉIA FREQUENTE E COCEIRA NO CANTO DO OLHO NASAL. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">IZOLETE PEREIRA</td>
+<td align="left" width="98" colspan="1" class="datap">58 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO, SENTE O GRAU FRACO E CEFALÉIA COM A RX. EXAMES OK. 
+ÚLT GRAU +0.75/+0.75 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JANIFER PEREIRA DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">33 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE MAIS DIFICULDADE DE ENXERGAR A NOITE PRA LONGE. SENTE CEFALÉIA, ARDÊNCIA E CANSAÇO NOS OLHOS. EXAMES OK. TTO DE TIREÓIDE.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">BRUNA GABRIELLY DE OLIVEIRA SANTOS</td>
+<td align="left" width="98" colspan="1" class="datap">26 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 3 ANOS, NÃO FAZ USO CONTÍNUO PQ SENTE CEFALÉIA COM A CORREÇÃO E GRAU DESCONFORTÁVEL, MAIS DIFICULDADE EM VL. EXAMES OK.
+ÚLT GRAU -2.25-0.25*120/-2.25 ESF</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">DELVAIR MACCARI</td>
+<td align="left" width="98" colspan="1" class="datai">43 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VP. NÃO TEM DIFICULDADE PRA LONGE. EXAMES OK. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARTA REGINA PIROLLI</td>
+<td align="left" width="98" colspan="1" class="datap">53 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, ESTA SENTINDO CEFALÉIA MAIOS FREQUENTE COM A CORREÇÃO, ESTA FAZENDO CONTROLE DA PA. EXAMES OK.
+ÚLT GRAU +3.00-1.50*120/+2.50-1.25*60 AD 1.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">SILVIA MENDES DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datai">47 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS MAS NÃO CONSEGUIU USAR A CORREÇÃO POR SENTIR DESCONFORTO E LACRIMEJAMENTO. SENTE DIFICULDADE EM VL E MAIS EM PERTO. EXAMES OK.
+ÚLT GRAU +1.00-0.25*45/+1.25-0.25*50 AD 1.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">EMÍLIO JOSÉ GUZZI</td>
+<td align="left" width="98" colspan="1" class="datap">80 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O OLHO LACRIMEJAR COM RX. SENTE O GRAU MAIS FRACO PRA PERTO. USA BIFOCAL E QUER MULTIFOCAL. EXAMES OK. BATEU O OD COM 22 ANOS E FEZ CATARATA COM 35 ANOS NO MESMO.
+ÚLT GRAU +1.50/+2.25-0.50*165 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JOELMIR RICHNER</td>
+<td align="left" width="98" colspan="1" class="datai">54 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VP, NÃO PERCEBE DIFICULDADE EM VL. CEFALÉIA NÃO FREQUENTE QUANDO FAZ LEITURA. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">IRMA ELVIRA PISTORE</td>
+<td align="left" width="98" colspan="1" class="datap">73 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, FAZIA USO CONTÍNUO E PERDEU O ÓCULOS HÁ 1 SEMANA, SENTE DIFICULDADE EM VL E VP. EXAMES OK. CEFALÉIA NÃO FREQUENTE.
+ÚLT GRAU +4.25-1.25*90/+3.50-1.00*95 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">BRUNA INÊS ANTONIOLLI</td>
+<td align="left" width="98" colspan="1" class="datai">20 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 6 ANOS, NÃO ESTA FAZENDO USO DO ÓCULOS. SENTE CANSAÇO E ARDÊNCIA NA LUZ. EXAMES OK. CEFALÉIA FREQUENTE.
+ÚLT GRAU AO +0.50.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">IRACY MANDRON ANTONIOLLI</td>
+<td align="left" width="98" colspan="1" class="datap">50 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE MAIS DIFICULDADE EM VP E LEVEMENTE PRA LONGE. SENTE CEFALÉIA FREQUENTE AO FORÇAR A VISÃO PRA LER. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">DOUGLAS TAUFER FRANCISCO</td>
+<td align="left" width="98" colspan="1" class="datai">22 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO E NÃO PRESCREVERAM RX, SENTE MAIOR DIFICULDADE NO OD E NA ÚLTIMA CONSULTA COM O NAKANO E ELE ENCAMINHOU PRA TRANSPLANTE. EXAMES OK. SENTE POSTADAS NO LADO DIREITO DA CABEÇA. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">28/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CLAUDETE WALTRICK DE CAMARGO</td>
+<td align="left" width="98" colspan="1" class="datap">51 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, NÃO FAZ USO CONTÍNUO MAS É MULTIFOCAL, NÃO TROUXE O ÓCULOS E SENTE MAIS DIFICULDADE EM VP. EXAMES OK. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">29/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">NEUSA ANA CERVELIN</td>
+<td align="left" width="98" colspan="1" class="datai">54 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, MULTIFOCAL MAS USA MAIS PRA PERTO PRA COSTURA, SENTE CEFALÉIA E TONTURA COM A RX. SENTE DOR NO OLHO AO FORÇAR. EXAMES OK.
+ÚLT GRAU +0.25-0.25*75/+0.25-0.25*100 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">29/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MATHEUS ANTONIO COLASSO DE MORAES</td>
+<td align="left" width="98" colspan="1" class="datap">10 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, MÃE RELATA QUE ELE FICA BASTANTE NO CELULAR E RECLAMA DAS LETRAS PEQUENAS E SENTE CEFALÉIA FREQUENTE. TEM SINUSITE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">29/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">FABIANA DE OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datai">29 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, FAZ USO DO ÓCULOS MAIS PRA TRABALHAR, LENTES RISCADAS E SENTE DESCONFORTO COM O GRAU. SENTE CEFALÉIA FREQUENTE. EXAMES OK.
+ÚLT GRAU 0.00-1.50*180/+0.25-2.25*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">29/09/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LORECI CORRÊA</td>
+<td align="left" width="98" colspan="1" class="datap">50 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, SENTE O GRAU FRACO PRA PERTO E SENTE LEVE DESCONFORTO PRA LONGE. SENTE CEFALÉIA FREQUENTE (SINUSITE)E TONTURA AO FORÇAR. EXAMES OK. 
+ÚLT GRAU 0.00 AD 1.25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">29/09/2020</td>
+<td align="left" width="348" colspan="1" class="datai">TAISSA ARIELLE SOUSA CORREA</td>
+<td align="left" width="98" colspan="1" class="datai">21 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, FAZIA USO CONTÍNUO E PERDEU ÓCULOS HÁ 4 MESES, SENTE CEFALÉIA E ARDÊNCIA SEM O ÓCULOS. EXAMES OK. 
+ÚLT GRAU AO 0.00-1.25*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">01/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LUMA LILEAR MOREIRA BARBOSA</td>
+<td align="left" width="98" colspan="1" class="datap">25 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 1 ANO, NÃO FAZ USO CONTÍNUO PQ SENTE O GRAU DESCONFORTÁVEL, SENTE DIFICULDADE EM VL. SENTE CEFALÉIA E ENJOO. EXAMES OK.
+NÃO TROUXE O ÓCULOS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">01/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">VALMIR VON MUHLEN</td>
+<td align="left" width="98" colspan="1" class="datai">51 anos</td>
+<td align="left" width="618" colspan="1" class="datai">FEZ RASPAGEM DE PTERÍGIO HÁ 3 ANOS E DEPOIS FOI PRESCRITO RX MAS NÃO USOU. RECENTE NÃO PASSOU NO EXAME DE CNH PRA LONGE E SENTE DIFICULDADE EM VP TBM. EXAMES OK. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">01/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">FLAVIA DA SILVA ADRIANO</td>
+<td align="left" width="98" colspan="1" class="datap">45 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, QUEBROU O ÓCULOS E SENTE O GRAU FRACO PRA PERTO. CEFALÉIA SEM RX. EXAMES OK. 
+ÚLT GRAU 0.00-0.75*30/+0.25-0.25*180 AD 1.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">01/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">STEVE SILVEIRA E COSTA</td>
+<td align="left" width="98" colspan="1" class="datai">45 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE CANSAÇO NO FINAL DO DIA, TRABALHA O DIA TODO NO COMPUTADOR E ESTUDA A NOITE. SEM SINTOMAS. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">01/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LEANDRO SOARES ASSUNÇÃO DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datap">22 anos </td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO MENOS NO TRABALHO, QUEBROU O ÓCULOS E SENTE MAIS DIFICULDADE EM VL. EXAMES OK. TEM SUSPEITA DE CERATOCONE MAS NÃO INVESTIGOU AINDA. RELATA QUE A VISÃO NÃO FICA 100% COM CORREÇÃO.
+ÚLT GRAU -1.50-1.75*10/-0.50-1.50*170</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">01/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ALINE DA CONCEIÇÃO DE MELLO NASCIMENTO</td>
+<td align="left" width="98" colspan="1" class="datai">37 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRUA FRACO E AS LENTES RISCADAS, SENTE CEFALÉIA COM E SEM RX. EXAMES OK.
+ÚLT GRAU 0.00-1.00*80/0.00-1.00*80</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">01/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MIGUELINA ROMI LAURENTINO DE LIMA</td>
+<td align="left" width="98" colspan="1" class="datap">59 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, USA SOMENTE PRA PERTO, SENTE O GRAU FRACO E DIFICULDADE PRA LONGE TBM, DIZ QUE PRECISA USAR O ÓCULOS O DIA TODO, SENTE CEFALÉIA E DOR NOS OLHOS SEM RX. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU AO +2.50.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">13/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">NATASHA BRESCIANI PEREIRA</td>
+<td align="left" width="98" colspan="1" class="datai">23 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, FAZ USO DE LC (AO -1.25-0.75*90). SENTE O GRAU DA LENTE FRACO, USA MAIS A RX DO ÓCULOS QUE CONSULTOU HÁ 3 ANOS (-1.50-1.00*95/-1.75-1.00*85). GRAU DO RX FRACO TBM. EXAMES OK. CEFALÉIA NÃO FREQUENTE.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">13/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">SONIA APARECIDA ROSKOSKI</td>
+<td align="left" width="98" colspan="1" class="datap">23 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO E SENTE O GRAU FRACO E LENTES RISCADAS. EXAMES OK.
+ÚLT GRAU -4.25-0.75*165/-2.75-2.00*5</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">13/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARINES SALETE ZANCANELLI GALLAFASSI STOLKE</td>
+<td align="left" width="98" colspan="1" class="datai">52 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 4 ANOS, SENTE O GRAU FRACO EM VL MAS MAIS EM VP. SEM SINTOMAS. EXAMES OK. RINITE ALÉRGICA.
+ÚLT GRAU 0.00-0.50*110/0.00-0.50*45 AD 1.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">13/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">FLAVIO ALESSANDRO SOMMARIVA</td>
+<td align="left" width="98" colspan="1" class="datap">15 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FEZ USO DE ÓCULOS DESDE NENÉM E COM 13 FOI DISPENSADO PORQUE MÉDICO MANDOU VOLTAR SOMENTE COM 18 ANOS, SENTE CEFALÉIA FREQUENTE, TROPEÇA E DESCONFORTO. EXAMES OK. SENTE FORÇAR A VISÃO PRA LONGE E PERTO. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">13/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ONDINA CANONICA</td>
+<td align="left" width="98" colspan="1" class="datai">62 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, NÃO FAZ USO CONTÍNUO (NÃO ACOSTUMOU), SENTE O GRAU FRACO PRA PERTO. EXAMES OK. DIABETES E PA CONTROLADA COM MEDICAMENTO (ULT GLICEMIA HÁ 1 MÊS 137MG/DL). SEM SINTOMAS.
+ÚLT GRAU +1.00-0.75*85/+1.00-0.75*100 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">13/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">WALISSON RODRIGO COSTA CAMPO</td>
+<td align="left" width="98" colspan="1" class="datap">19 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, SENTE GRAU FRACO, TONTURA, CEFALÉIA E DESMAIO. EXAMES OK. 
+ÚLT GRAU -2.25-1.75*165/-2.75-1.75*175</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">13/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">TEREZINHA RODRIGUES DA CRUZ</td>
+<td align="left" width="98" colspan="1" class="datai">45 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 4 ANOS, NÃO ESTA USANDO ÓCULOS, LENTES RISCADAS E GRAU FRACO, SENTE MAIS DIFICULDADE EM VP. EXAMES OK. CEFALÉIA FREQUENTE.
+ÚLT GRAU 0.00-1.50*5/0.00-0.50*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">13/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">EDEVALDO ANTONIO DE OLIVEIRA JUNIOR</td>
+<td align="left" width="98" colspan="1" class="datap">30 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, NÃO PASSOU NO EXAME DA CNH, DIFICULDADE DE VISÃO NO OE. EXAMES OK. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">13/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">VALMOR GHELLER</td>
+<td align="left" width="98" colspan="1" class="datai">49 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VP, NÃO SENTE DIFICULDADE PRA LONGE. LACRIMEJAMENTO AO FORÇAR LEITURA E COMPUTADOR. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">13/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LARISSA SZEMANSQUI DA COSTA</td>
+<td align="left" width="98" colspan="1" class="datap">25 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO. SENTE CEFALÉIA, TENSÃO AO FORÇAR, USA BASTANTE O CELULAR. EXAMES OK.
+ÚLT GRAU -0.25-1.75*165/-0.25-0.75*25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">PAULO LUIS SILVA DE OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datai">56 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO, SENTE O GRAU OK, LENTES RISCADAS. EXAMES OK. 
+ÚLT GRAU +0.50-0.25*45/+0.50-0.50*5 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LILIAN PALHARINI</td>
+<td align="left" width="98" colspan="1" class="datap">43 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FEZ USO DE ÓCULOS MAIS PRA PERTO, SENTE MAIS DIFICULDADE PRA PERTO E NÃO USA HÁ UM TEMPO. CEFALÉIA NÃO FREQUENTE NA LEITURA. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">22/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ANDRESA RICARDO MAIOLI</td>
+<td align="left" width="98" colspan="1" class="datai">44 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, MULTIFOCAL MAS USA MAIS PRA PERTO, NÃO SENTE DIFICULDADE EM VL E TA SENTINDO DIFICULDADE COM O ÓCULOS PRA PERTO E CEFALÉIA MAIS FREQUENTE NOS ÚLTIMOS DIAS E FOTOFOBIA EM LUZ BRANCA. EXAMES OK.
+ÚLT GRAU +0.25-0.50*170/+0.25 AD 1.25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">22/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARIA TERESINHA RAMOS</td>
+<td align="left" width="98" colspan="1" class="datap">65 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 2 ANOS, FAZIA USO CONTÍNUO E PERDEU O ÓCULOS HÁ 8 MESES, DIFICULDADE EM VL E VP. AO FORÇAR NO CELULAR SENTE UM DESCONFORTO NA CABEÇA LEVE E NÃO FREQUENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">22/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">GESSI CARMEM RODRIGUES SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">50 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 5 ANOS, NÃO USA HÁ 3 ANOS, SENTE DIFICULDADE MAIS EM VP. EXAMES OK. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">22/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">DAVI LUCAS PEREIRA PASSIG</td>
+<td align="left" width="98" colspan="1" class="datap">7 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, QUEBROU RX HÁ 2 SEMANAS, FAZIA USO CONTÍNUO E TEM MAIS DIFICULDADE PRA PERTO. SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU +4.00-0.50*40/+4.50-0.75*100</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">22/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">LUIZ ARTHUR PEREIRA DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datai">15 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO, LENTES RISCADAS, SENTE O GRAU CONFORTÁVEL. SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU -1.50-0.50*180/-1.25 ESF</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">26/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LUCIANA MAIA</td>
+<td align="left" width="98" colspan="1" class="datap">44 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE MAIS DIFICULDADE EM VP, NÃO TEM DIFICULDADE PRA LONGE. SENTE CEFALÉIA AO FORÇAR PERTO. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">26/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ENIO ANTONIO RECH</td>
+<td align="left" width="98" colspan="1" class="datai">49 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, RELATA SENTIR DIFICULDADE PRA PERTO, AFASTA PRA VER MELHOR. EXAMES OK HÁ + 2 ANOS. LACRIMEJA QUANDO USA MUITO O CELULAR.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">26/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CLODINEI JOSÉ POSSENTI</td>
+<td align="left" width="98" colspan="1" class="datap">44 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 2 ANOS, USA SOMENTE PRA PERTO, MAIS PRA TRABALHAR NO COMPUTADOR, ESTÁ SENTINDO DIFICULDADE EM VL TBM, PERDEU RX HÁ 1 SEMANA. EXAMES OK. DIABETES, PA E ARTRITE CONTROLADAS COM MEDICAMENTO. ÚLT GLICEMIA 110MG/DL HÁ 3 MESES.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">26/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">DARCI DE CAMPOS</td>
+<td align="left" width="98" colspan="1" class="datai">60 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE DIFICULDADE MAIOR PRA PERTO NA LEITURA E LEVE EMBAÇAMENTO PRA LONGE. NUNCA FEZ EXAME DE SANGUE. FAZ TTO PRA DESGASTE NA COLUNA E ARTROSE. CEFALÉIA AO FORÇAR LEITURA NÃO FREQUENTE. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">26/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">GEMA LOURDES PIRAN</td>
+<td align="left" width="98" colspan="1" class="datap">75 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO, LENTES RISCADAS, SENTE O GRAU DESCONFORTÁVEL. COSTUREIRA. EXAMES OK. PA E DOR NO JOELHO CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU +2.00-1.00*80/+2.50-1.00*80 AD 2.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">26/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">NADIR MARIA DE FÁTIMA DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">53 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 10 ANOS, USA MAIS O ÓCULOS PRA PERTO, GRAU FRACO EM VL E VP. SENTE CEFALÉIA, ENJOO E FAZ TRATAMENTO PRA LABIRINTITE. EXAMES OK. 
+ÚLT GRAU +0.25-0.25*65/+0.25-0.50*25 AD 1.25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">26/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ERICA PADILHA MORAIS</td>
+<td align="left" width="98" colspan="1" class="datap">18 anos/19 anos/21 anos</td>
+<td align="left" width="618" colspan="1" class="datap">26/10/2020 - ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO, SENTE GRAU FRACO, EMBAÇA COM O ÓCULOS. EXAMES OK. CEFALÉIA NÃO FREQUENTE.
+ÚLT GRAU -1.75/-1.50
+
+15/10/21 - ÚLT CONSULTA HÁ 1 ANO, ROTINA E SENTE O GRAU FRACO. EXAMES OK. CEFALÉIA FREQUENTE, TONTURA. 
+ÚLT GRAU -2.75-0.75*10/-2.75-0.75*180
+
+20/01/23 - ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO E SENTE O GRAU FRACO. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU -3.00-1.00*15/-3.25-0.50*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">26/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">CARLOS BARBOSA</td>
+<td align="left" width="98" colspan="1" class="datai">50 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE MAIS DIFICULDADE EM VP, NÃO RELATA DIFICULDADE EM VL, DIRIGIR A NTE E CEFALÉIA AO FORÇAR. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">26/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ONILDO UBIALI</td>
+<td align="left" width="98" colspan="1" class="datap">58 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU LEVEMENTE MAIS FRACO NO OD. SEM SINTOMAS. EXAMES OK. DOADOR DE SANGUE E FAZ TTO CALMANTE.
+ÚLT GRAU +1.00-0.50*180/+0.50-0.25*180 AD 2.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">26/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">GUILHERME STRAPAZZON</td>
+<td align="left" width="98" colspan="1" class="datai">23 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO, SENTE CEFALÉIA FREQUENTE COM A CORREÇÃO. EXAMES OK.
+ÚLT GRAU -1.50-1.75*160/-1.25-1.75*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">26/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CLEONICE SALETTE POLEIS ZUCONELLI</td>
+<td align="left" width="98" colspan="1" class="datap">60 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 5 ANOS, SENTE O GRAU FRACO EM VP. SENTE CEFALÉIA NÃO FREQUENTE, LACRIMEJAMENTO COM RINITE ALÉRGICA. EXAMES OK. 
+ÚLT GRAU +0.75/+0.25 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">26/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ANGELITA RODRIGUES JARDIM MARTINS</td>
+<td align="left" width="98" colspan="1" class="datai">37 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 5 ANOS, NÃO ESTA FAZENDO USO DA CORREÇÃO HÁ UM TEMPO, ESTA SENTINDO DIFICULDADE EM VL MAIS NO OD. EXAMES OK. RINITE ALÉRGICA E SENTE CEFALÉIA FREQUENTE NOS ÚLTIMOS MESES.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">26/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MACOLINO MAIA</td>
+<td align="left" width="98" colspan="1" class="datap">49 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE SOMENTE EM VP. SEM SINTOMAS. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">26/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">SANDRA MARIA RAULINO</td>
+<td align="left" width="98" colspan="1" class="datai">42 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE MAIS DIFICULDADE EM VP, CELULAR E LEITURA. SEM SINTOMAS. RINITE ALÉRGICA COM COCEIRA NO OLHO. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">27/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">HELOIVER BIANCHI</td>
+<td align="left" width="98" colspan="1" class="datap">20 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, ESTUDA DIARIAMENTE NO COMPUTADOR, SENTE O OD MAIS EMBAÇADO PRA LONGE. SEM SINTOMAS. RINITE ALÉRGICA. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">27/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">PERGENTINO GARIBALDI OGLIARI</td>
+<td align="left" width="98" colspan="1" class="datai">84 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 20 ANOS, NÃO FAZ USO DA CORREÇÃO, NUNCA CONSEGUIU FAZER USO DE RX. ESTÁ SENTINDO DIFICULDADE EM VL E VP. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU +0.50-2.75*115/+0.50-2.75*60 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">27/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LUCIMAR GEMO CONCI</td>
+<td align="left" width="98" colspan="1" class="datap">48 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VP HÁ MENOS DE 1 ANO, NÃO SENTE DIFICULDADE EM VL. LACRIMEJA E ARDE AO FORÇAR LEITURA E TV. EXAMES OK. BATEU O OE COM UM PREGO HÁ MENOS DE 1 ANO E NÃO FOI NO MÉDICO AVALIAR.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">27/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARLI TEREZA HILGERT</td>
+<td align="left" width="98" colspan="1" class="datai">64 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 3 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU DESCONFORTÁVEL, CA NA MAMA ESQUERDA, FEZ TTO E QUIMIO E SEGUE EM TTO. EXAMES OK. SENTE CEFALÉIA MAIS FREQUENTE ULTIMOS MESES.
+ÚLT GRAU +1.50-1.25*80/+1.75-1.50*105 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">27/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JÚLIA ZIMMER ROBERTI</td>
+<td align="left" width="98" colspan="1" class="datap">16 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO E SENTE O GRAU FRACO PRA LONGE. SENTE CEFALÉIA FREQUENTE (ENXAQUECA). EXAMES OK - TRIGLICERÍDEOS E COLESTEROL).
+ÚLT GRAU -0.50-0.50*175/-1.00-0.50*10</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">27/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">CHRISTIANE ZIMMER</td>
+<td align="left" width="98" colspan="1" class="datai">48 anos</td>
+<td align="left" width="618" colspan="1" class="datai">FEZ LASER AO HÁ + 10 ANOS PRA MIOPIA, ESTA SENTINDO DIFICULDADE EM VP. SEM SINTOMAS. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">29/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">DEJIANE CARDOSO</td>
+<td align="left" width="98" colspan="1" class="datap">44 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 3 ANOS, USA SOMENTE PERTO, MANICURE, SENTE O GRAU FRACO E NÃO TEM DIFICULDADE EM VL. SEM SINTOMAS. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU AO +1.00.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">29/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">LUARA DA SILVA DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datai">21 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO E LENTES RISCADAS. CEFALÉIA SEM RX. EXAMES OK.
+ÚLT GRAU -1.25/0.00-0.25*30</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">29/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ANA LUCIA DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">46 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE NA LEITURA E CELULAR. CEFALÉIA, EMBARALHA, DOR NOS OLHOS E ENJOO AO FORÇAR A LEITURA. EXAMES OK. DIABETES E PA CONTROLADA COM MEDICAMENTO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">29/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ELISANGELA MARCOS DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">40 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO PRA LONGE. VISÃO DE PERTO OK. EXAMES OK. CEFALÉIA MAIS FREQUENTE ULTIMOS DIAS E TEM SINUSITE. 
+ÚLT GRAU AO -1.00 ESF.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">29/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">FRANCIELE COSTA DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">28 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, NÃO FAZ USO CONTÍNUO MAIS, ESTÁ SENTINDO CEFALÉIA COM RX. SENTE MAIS DIFICULDADE EM VL. EXAMES OK.
+ÚLT GRAU 0.00-0.75*120/0.00-0.50*60</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">29/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ANA BEATRIZ SILVA DA COSTA</td>
+<td align="left" width="98" colspan="1" class="datai">06 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE CEFALÉIA FRONTAL E DOR NOS OLHO AO ASSISTIR TV. EXAMES OK.
+</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">29/10/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JULIO CÉSAR DE AVILA OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datap">30 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ MENOS DE 1 ANO, QUEBROU ONTEM O ÓCULOS, FAZIA USO CONTÍNUO E JA SENTIA GRAU NO OE FRACO. SEM SINTOMAS. FEZ 2 CIRURGIAS DE PTERÍGIO NO OE E A ÚLTIMA HÁ 2 ANOS.
+ÚLT GRAU 0.00-0.50*180/-0.25-1.25*75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">29/10/2020</td>
+<td align="left" width="348" colspan="1" class="datai">SABRINNA SANTOS DE ALMEIDA</td>
+<td align="left" width="98" colspan="1" class="datai">17 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO, SENTE O GRAU EMBAÇADO PRA LONGE, ARDÊNCIA, LACRIMEJAMENTO E CEFALÉIA NÃO FREQUENTE. EXAMES OK.
+ÚLT GRAU -0.50-1.75*170/-0.75-1.50*170</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">05/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">FERNANDA LEMOS FELISARDO</td>
+<td align="left" width="98" colspan="1" class="datap">25 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 6 ANOS, FAZIA USO CONTÍNUO E QUEBROU O ÓCULOS HÁ 10 MESES, DIFICULDADE PRA VL. FAZ AULA ON LINE E ESTA SENTINDO DIFICULDADE, CEFALÉIA NÃO FREQUENTE E COCEIRA. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">05/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">RONALDO SÉRGIO KINCHESKI</td>
+<td align="left" width="98" colspan="1" class="datai">74 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 10 ANOS, NÃO FAZ USO CONTÍNUO, NÃO PASSOU NO TESTE DE CNH COM O ÓCULOS, SENTE O GRAU FRACO. SEM SINTOMAS. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU +0.75-0.50*75/+0.75-0.50*75 AD 2.00 </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">05/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARCELO SOUZA SIMÕES</td>
+<td align="left" width="98" colspan="1" class="datap">47 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 30 ANOS, USA O ÓCULOS MAS NÃO SENTE MAIS DIFERENÇA, SENTE DIFICULDADE EM VL E VP. CEFALÉIA FREQUENTE E ARDÊNCIA. DIRIGE O DIA TODO. FOTOFOBIA SOLAR. EXAMES OK.
+ÚLT GRAU 0.00-0.50*75/0.00-0.25*90</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">05/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MAURO HENRIQUE ANDRADE OLIBEIRA</td>
+<td align="left" width="98" colspan="1" class="datai">32 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS E FEZ USO SOMENTE POR 3 MESES DO RX, SENTE DIFICULDADE EM VL E VP. CEFALÉIA NÃO FREQUENTE, ARDÊNCIA MAIS FREQUENTE. EXAMES OK. RINITE ALÉRGICO.
+NÃO TROUXE ÓCULOS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">09/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LEOSSARA VOLFE</td>
+<td align="left" width="98" colspan="1" class="datap">31 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, FAZ USO CONTÍNUO DE RX, FEZ UMA CONSULTA HÁ 20 DIAS MAS SENTIU DESCONFORTO COM O GRAU PRESCRITO (+3.75-0.50*85/+2.00-1.00*85). SENTE CEFALÉIA, DOR NOS OLHOS. EXAMES OK. 
+ÚLT GRAU EM USO +2.00-0.50*65/+1.25-0.25*75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">09/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">DANIEL PIT MACHADO</td>
+<td align="left" width="98" colspan="1" class="datai">28 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, ESTÁ SENTINDO CEFALÉIA FORTE FREQUENTE, ARDÊNCIA E EMBAÇA A VISÃO PRA PERTO. EXAMES OK. SUSPEITA DE SINUSITE.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">09/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CAMILE VITÓRIA GAIO</td>
+<td align="left" width="98" colspan="1" class="datap">12 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE VISÃO DISTORCIDA E EMBAÇADA PRA LONGE. SEM SINTOMAS. USO FREQUENTE DE CELULAR. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">09/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ALMIR LAVRATTI</td>
+<td align="left" width="98" colspan="1" class="datai">47 anos</td>
+<td align="left" width="618" colspan="1" class="datai">CONSULTOU HÁ 2 ANOS, FOI PRESCRITO RX PRA PERTO MAS NÃO FEZ O ÓCULOS POIS ESTAVA EM TTO DE CA DE PELE ATRÁS DA ORELHA, SENTE MAIS DIFICULDADE EM VP. EXAMES OK. SENTE LEVE DIFICULDADE EM VL TBM. SEM SINTOMAS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">09/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">IDACIANE RAQUEL FERRAZZO</td>
+<td align="left" width="98" colspan="1" class="datap">40 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE CANSAÇO FREQUENTE, CEFALÉIA FORTE FREQUENTE, RASPOU A MÁSCARA NO OE HÁ ALGUNS MESES E PERCEBEU QUE EMBAÇA. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">09/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MATHEUS SILVA DE LIMA</td>
+<td align="left" width="98" colspan="1" class="datai">14 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, NÃO SENTE DIFICULDADE PRA ENXERGAR, SEM SINTOMAS. RECLAMA DE UMA VEIA QUE FICA MAIS APARENTE NO OE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">09/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">FRANCIÉLI PICCININ SCHLINDWEIN</td>
+<td align="left" width="98" colspan="1" class="datap">19 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU DESCONFORTÁVEL, CEFALÉIA E DOR NOS OLHOS MAIS FREQUENTE NOS ULTIMOS MESES. EXAMES OK.
+ÚLT GRAU 0.00-0.25*50/+0.25-0.25*175</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">09/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">PATRICIA MUNZLINGER CANTELLI</td>
+<td align="left" width="98" colspan="1" class="datai">39 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU FRACO MAIS EM VP. SENTE CEFALÉIA NÃO FREQUENTE. SINUSITE. FAZ MAIS USO DE CELULAR. EXAMES OK. FAZ TTO DE TAQUICARDIA.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">09/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LUIZA MARIA DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datap">53 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU FRACO, LENTES RISCADAS E CEFALÉIA COM RX. EXAMES OK. 
+ÚLT GRAU -0.50-0.75*110/+0.25-0.75*90 AD 1.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">09/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">VANESSA LAVRATTI</td>
+<td align="left" width="98" colspan="1" class="datai">25 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 3 ANOS, FAZIA USO CONTÍNUO E NÃO USA HÁ 6 MESES PQ NÃO SENTE MAIS DIFERENÇA COM O GRAU. SENTE DIFICULDADE EM VL E VP. TRABALHA A NOITE E NO COMPUTADOR. EXAMES OK. NÃO TROUXE O ÚLTIMO ÓCULOS.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">09/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">DAIANE TONIAZZO</td>
+<td align="left" width="98" colspan="1" class="datap">23 anos</td>
+<td align="left" width="618" colspan="1" class="datap">FEZ USO DE ÓCULOS COM 6 ANOS, SENTE CEFALÉIA FREQUENTE, DOR NOS OLHOS, ENXERGA BEM MAS SENTE CANSAÇO VISUAL FREQUENTE. SENTE VISÃO MAIS EMBAÇADA PRA PERTO. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">09/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JÉSSICA KNOB RAMOS</td>
+<td align="left" width="98" colspan="1" class="datai">24 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO, SENTE O GRAU FRACO. SENTE CEFALÉIA FREQUENTE. EXAMES OK. TTO PRA ANSIEDADE. QUER FAZER USO DE LC PRA SAIR.
+ÚLT GRAU -2.00-1.25*160/-1.25-1.25*170</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">KALIANA NERES DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">14 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO, SENTE O GRAU FRACO PRA LONGE. FAZ USO FREQUENTE DE CELULAR. SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU -0.75-1.00*160/-0.50-0.50*170</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">10/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">GILDO ANTONIO DE RAMOS CAMARGO</td>
+<td align="left" width="98" colspan="1" class="datai">56 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE DIFICULDADE MAIS PRA VP, NÃO RELATA PROBLEMAS COM VL. EXAMES OK. SENTE CEFALÉIA FREQUENTE (ENXAQUECA).</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">DOUGLAS VARGAS</td>
+<td align="left" width="98" colspan="1" class="datap">37 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 5 ANOS, USA MAIS PRA DIRIGIR, SENTE O GRAU CONFORTÁVEL. MAIS DIFICULDADE EM VL. EXAMES OK. SEM SINTOMAS. 
+ÚLT GRAU -0.50-0.75*120/-0.50-0.75*80</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">11/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">EZIDIO DAY</td>
+<td align="left" width="98" colspan="1" class="datai">60 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU CONFORTÁVEL. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU +2.00/+2.00 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">11/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">GABRIELLI MARIA DOS SANTOS MELO</td>
+<td align="left" width="98" colspan="1" class="datap">18 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VL HÁ + 1 ANO, USA CELULAR FREQUENTE. SENTE CEFALÉIA NÃO FREQUENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">11/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MARIA VALDENICE EVANGELISTA</td>
+<td align="left" width="98" colspan="1" class="datai">44 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, NÃO FAZ USO CONTÍNUO, SENTE O GRAU FRACO PRA PERTO. EXAMES OK. SENTE COCEIRA E ARDÊNCIA. FEZ RASPAGEM DE PTERÍGIO.
+ÚLT GRAU +1.25-0.50*80/+1.25 ESF </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">11/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">GILBERTO HONORIO</td>
+<td align="left" width="98" colspan="1" class="datap">49 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VL E VP, MOTORISTA. SENTE CEFALÉIA NÃO FREQUENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">19/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">REJANE RAMOS DE SOUSA</td>
+<td align="left" width="98" colspan="1" class="datai">43 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, FAZIA USO CONTÍNUO E PERDEU HÁ 3 DIAS, ERA MULTIFOCAL E SENTE MAIS DIFICULDADE EM VP. EXAMES OK. SENTE CEFALÉIA SEM RX AO FORÇAR DE PERTO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">19/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MIGUEL HENRIQUE KAUTZMANN</td>
+<td align="left" width="98" colspan="1" class="datap">19 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, SEGUE O LAUDO DE AMETROPIA ALTA E ESTRABISMO COM NISTAGMO, OD 100% E OE 40 A 60% DE VISÃO. SENTE O GRAU CONFORTÁVEL. EXAMES OK. FAZ USO CONTÍNUO DE RESPIRIDONA (AUTISMO). SEM SINTOMAS. 
+ÚLT GRAU +6.75-2.50*10/+6.50-3.00*175</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">28/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">THIAGO DA SILVA VERÍSSIMO</td>
+<td align="left" width="98" colspan="1" class="datai">32 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 3 ANOS, FAZ USO CONTÍNUO, TEM MAIS DIFICULDADE NO OE. SENTE O GRAU UM POUCO DESCONFORTÁVEL. EXAMES OK. 
+ÚLT GRAU +0.75/+1.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">28/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">BRUNA SANTOS FERNANDES</td>
+<td align="left" width="98" colspan="1" class="datap">22 anos </td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, APÓS A GESTAÇÃO SENTIU MAIS DESCONFORTO NOS OLHOS, CEFALÉIA, EMBAÇA PRA LONGE E SENTE TONTURA. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">28/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">AMADEU CHAVES DOS SANTOS</td>
+<td align="left" width="98" colspan="1" class="datai">34 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO, SENTE MAIS DIFICULDADE PRA LONGE E MAIS NO OE, SENTE O GRAU FRACO E LENTES EMBAÇADAS. EXAMES OK. 
+ÚLT GRAU 0.00-3.50*175/-2.25-2.25*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">28/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ELIANE APARECIDA SANTOS</td>
+<td align="left" width="98" colspan="1" class="datap">40 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 5 ANOS, FEZ ÓCULOS MAS NÃO FEZ USO. SENTE CEFALÉIA FREQUENTE (ENXAQUECA). TEM DIFICULDADE EM VP. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">28/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JOÃO BATISTA ALVES FERNANDES</td>
+<td align="left" width="98" colspan="1" class="datai">41 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, USAVA MAIS PRA PERTO E QUEBROU O ÓCULOS HÁ 1 MÊS, SENTE MAIS DIFICULDADE EM VP. SEM SINTOMAS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">28/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JULIANA OLIVEIRA DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">27 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 6 MESES, FAZ USO CONTÍNUO DE ÓCULOS E LC, TIROU A LENTE ANTES DA CONSULTA, SEGUNDO ELA O GRAU É -8.00 AO. DIFICULDADE EM VL, E CEFALÉIA MAIS FREQUENTE NOS ÚLTIMOS DIAS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">28/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">SABRINA EROTIDES PADILHA</td>
+<td align="left" width="98" colspan="1" class="datai">33 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 2 ANOS DE GRAU, EM NOVEMBRO DO ANO PASSADO CONSULTOU OFTALMO E FEZ TTO DE GLAUCOMA E HERPES, PERDEU RAPIDAMENTE A VISÃO E TERMINOU O TTO HÁ 1 MÊS E SENTE VISÃO LIMPA. SENTE MAIS SENSIBILIDADE NO OE DO TTO. SENTE CEFALÉIA FREQUENTE E FOTOFOBIA COM LACRIMEJAMENTO. SENTE DIFICULDADE EM VL.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">28/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">LILIAN DA SILVA BRITTES DE HOLANDA CAVALCANTI</td>
+<td align="left" width="98" colspan="1" class="datap">33 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO, SENTE MAIS DIFICULDADE EM VP. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU +0.75-0.25*90/+1.00-0.75*90</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">28/11/2020</td>
+<td align="left" width="348" colspan="1" class="datai">EMILLI SATURNINO CUNHA</td>
+<td align="left" width="98" colspan="1" class="datai">20 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE CEFALEIA FREQUENTE, VISÃO EMBARAÇADA E ARDÊNCIA, DIFICULDADE EM VL. EXAMES OK. GESTAÇÃO HÁ 5 MESES. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">28/11/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ANTÔNIO DE JESUS FILHO</td>
+<td align="left" width="98" colspan="1" class="datap">39 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO, NÃO FOI BEM NO EXAME DA AUTO ESCOLA, ALTA MIOPIA. EXAMES OK. 
+FEZ RASPAGEM DE PTERÍGIO HÁ 1 ANO NOS DOIS OLHOS.
+ÚLT GRAU -11.75-0.50*180/-9.00-1.75*5</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">03/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">THIAGO DA SILVA BRITTES</td>
+<td align="left" width="98" colspan="1" class="datai">35 anos</td>
+<td align="left" width="618" colspan="1" class="datai">FEZ UMA CONSULTA HÁ 6 MESES MAS NÃO FEZ A CORREÇÃO, SENTE DIFICULDADE EM VL. SEM SINTOMAS. EXAMES OK. IRMÃ TEM ASTIGMATISMO HIPERMETRÓPICO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">03/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JOSÉ DINARTE MENDES DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">63 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTÍNUO E SENTE DIFICULDADE EM VL E VP. EXAMES OK. FAZ TTO COLUNA. SEM SINTOMAS.
+ÚLT GRAU +4.50/+5.00 AD 2.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">03/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">GABRIEL OLIVEIRA DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">23 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE A VISÃO EMBAÇADA PRA LONGE, FECHA O OLHO PRA VER MELHOR. FAMÍLIA USA ÓCULOS. SENTE TONTURA AO ASSISTIR TV. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">03/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">PAULO SÉRGIO DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">60 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO, LENTES ARRANHADAS, GRAU OK. SEM SINTOMAS. TEM ENXAQUECA. EXAMES OK.
+ÚLT GRAU +2.00/+2.25-0.50*60 AD 2.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">03/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JOÃO MARQUES DA SILVA FILHO</td>
+<td align="left" width="98" colspan="1" class="datai">68 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 MÊS E NÃO SE ADAPTOU COM O ÓCULOS, FORÇA E LACRIMEJA QUANDO COLOCA. EXAMES OK. DIABETE E PA CONTROLADA COM MEDICAMENTO. GRAU ANTERIOR +1.75-1.00*90/+2.00-1.00*90 AD 2.50.
+ÚLT GRAU QUE NÃO ACOSTUMOU +1.50-1.50*95/+1.75-1.25*75 AD 2.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">03/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">VITOR WERNER</td>
+<td align="left" width="98" colspan="1" class="datap">25 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 1 ANO, FAZ USO CONTÍNUO E SENTE O GRAU DESCONFORTÁVEL. SENTE MAIS DIFICULDADE EM VL. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU -1.00-0.50*135/-1.00-0.75*150</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">03/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JANE TEIXEIRA DA PAIXÃO</td>
+<td align="left" width="98" colspan="1" class="datai">43 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 1 ANO, NÃO FAZ USO CONTÍNUO, SOMENTE PERTO E SENTE O GRAU FRACO. SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU +1.00-0.50*45/+1.25-0.50*85</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">03/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">HAMILTON ARI DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">57 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU RUIM E LENTES ARRANHADAS AR. CEFALÉIA MAIS FREQUENTE NOS ÚLTIMOS MESES. EXAMES OK. 
+ÚLT GRAU +1.25/+1.25 AD 2.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">03/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">EDERSON DOS SANTOS DA COSTA</td>
+<td align="left" width="98" colspan="1" class="datai">30 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 8 ANOS E NÃO ESTA FAZENDO USO DE CORREÇÃO, SENTE DIFICULDADE EM VL E VP. EXAMES OK. PA CONTROLADA COM MEDICAMENTO. CEFALÉIA FRONTAL FREQUENTE. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">NAILTON RITTA XIMENES</td>
+<td align="left" width="98" colspan="1" class="datap">18 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO DE LC, CONSULTOU HÁ 1 MES MAS ESTAVA COM IRRITAÇÃO E FOI FALADO PRA USAR ÓCULOS E VOLTAR HJ. SENTE O GRAU OK. 
+SEM SINTOMAS. EXAMES OK. 
+ÚLT GRAU -8.00-1.00*180/-4.75-1.00*30</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">10/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">NORTON MACHADO</td>
+<td align="left" width="98" colspan="1" class="datai">44 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 1 ANO, FAZ USO MAIS PRA PERTO MAS É MULTIFOCAL, NÃO SENTE DIFICULDADE. SENTE O GRAU FRACO E CEFALÉIA FREQUENTE NOS ÚLTIMOS DIAS. EXAMES OK. 
+ÚLT GRAU +1.00/+1.50-0.50*165 AD 1.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ROSA COSTA</td>
+<td align="left" width="98" colspan="1" class="datap">70 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO, FAZ USO CONTÍNUO E SENTE O GRAU OK, COCEIRA E INCHAÇO NOS OLHOS (RINITE). EXAMES OK. TTO CONTÍNUO DE ARRITMIA. FAZ USO DE ÓCULOS SÓ PERTO DE 2018 (AO 2.75). TEVE UM ABORTO HÁ 43 ANOS DE 8 MESES E SENTIU A VISÃO EMBAÇAR E NÃO VOLTAR.
+ÚLT GRAU +0.25-0.25*30/0.00 AD 2.75 </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">10/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">SABRINA ALVES</td>
+<td align="left" width="98" colspan="1" class="datai">41 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 5 ANOS, NÃO ESTA FAZENDO USO DE CORREÇÃO, GESTAÇÃO DE 6 MESES, SENTE DIFICULDADE EM VL. SEM SINTOMAS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARIA LUIZA MEDEIROS CISNE</td>
+<td align="left" width="98" colspan="1" class="datap">15 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 3 ANOS, NÃO FAZ USO CONTÍNUO, NÃO SE ADAPTOU BEM COM A CORREÇÃO. SENTE CEFALÉIA FREQUENTE E DIFICULDADE EM VL. EXAMES OK. TTO DE HIPOTIROIDISMO.
+ÚLT GRAU -0.75/-0.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">10/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">JAMILE DE OLIVEIRA FREITAS FERREIRA</td>
+<td align="left" width="98" colspan="1" class="datai">31 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, NÃO FAZ USO DE CORREÇÃO, SENTE DIFICULDADE EM VL, CEFALÉIA NÃO FREQUENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ALTAMIRO VITOR DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">76 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 1 ANO E MEIO, FAZ USO CONTÍNUO E SENTE O ÓCULOS FRACO PRA PERTO E PRA VER TV A NOITE. EXAMES OK. TTO PA, ARRITMIA E COLESTEROL.
+ÚLT GRAU +3.00-1.25*90/+2.75-1.00*60 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">10/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">VANDERLEI VIEIRA</td>
+<td align="left" width="98" colspan="1" class="datai">29 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE ARDÊNCIA NA LEITURA E VISÃO EMBAÇADA PRA LONGE. CEFALÉIA NÃO FREQUENTE. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CLEUSA ALVES DE SOUZA</td>
+<td align="left" width="98" colspan="1" class="datap">54 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 1 ANO, FAZIA USO CONTÍNUO MAS QUEBROU O ÓCULOS E ESTA SEM HÁ ALGUM TEMPO. SENTE MAIS DIFICULDADE EM VP. EXAMES OK. SEM SINTOMAS.
+ÚLT GRAU +0.50-0.50*90/+0.25-0.25*30 AD 2.25</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">10/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ANGELA MARIA DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">55 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 5 ANOS, NÃO FAZ USO DE CORREÇÃO E SENTE SOMENTE DIFICULDADE EM VP. SENTE CEFALÉIA FREQUENTE AO FORÇAR NO CELULAR. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ROSANGELA APARECIDA DA ROSA</td>
+<td align="left" width="98" colspan="1" class="datap">48 anos</td>
+<td align="left" width="618" colspan="1" class="datap">FEZ CIRURGIA COM 23 ANOS DE MIOPIA E ASTIGMATISMO E NÃO FEZ MAIS USO DE CORREÇÃO, ESTA SENTINDO DESCONFORTO PRA PERTO. SEM SINTOMAS. EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">10/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">RONDINELIO LOPES MARTINS</td>
+<td align="left" width="98" colspan="1" class="datai">47 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VL E VP, HIPEREMIA VISÍVEL, CEFALÉIA AO FORÇAR LEITURA (PROJETO). EXAMES OK. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">10/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">RAILAN SANTOS SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">24 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE UM LEVE EMBAÇAMENTO PRA LONGE, AO FORÇAR SENTE DOR OCULAR E LACRIMEJAMENTO. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">MÁRCIO ADRIANO RIBEIRO</td>
+<td align="left" width="98" colspan="1" class="datai">42 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ULT CONSULTA HÁ + 5 ANOS, NÃO ESTÁ FAZENDO USO DE CORREÇÃO, TEVE ÚLCERA NO OE DESDE CRIANÇA E TEM 70% DA VISÃO NELE. HÁ 3 SEMANAS SENTE MAIS DIFICULDADE PRA ENXERGAR VL E VP, FOTOFOBIA. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JOSÉ PALHANO</td>
+<td align="left" width="98" colspan="1" class="datap">54 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VP. NÃO SENTE DIFICULDADE EM VL. SENTE CEFALÉIA FRONTAL AO FORÇAR. EXAMES OK. FAZ TTO COM SERTRALINA CONTÍNUO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">DARLAN TIAGO DECONTO</td>
+<td align="left" width="98" colspan="1" class="datai">30 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO, SENTE O GRAU FRACO E LENTES EMBAÇADAS. SENTE MAIS DIFICULDADE EM VL. EXAMES OK.
+ÚLT GRAU -1.25-0.50*5/-0.50-2.25*5</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">ELUISA REGINA PERAZZOLI DE MORAES</td>
+<td align="left" width="98" colspan="1" class="datap">32 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, ÚLTIMOS DIAS ESTÁ SENTINDO MAIS FOTOFOBIA E SENTE MAIS SENSIBILIDADE NO OE. TEVE PROCESSO DE INFLAMAÇÃO NO OE HÁ DUAS SEMANAS. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">DARCI GONÇALVES</td>
+<td align="left" width="98" colspan="1" class="datai">62 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE MAIS DIFICULDADE EM VP, DOR NO OLHO AO FORÇAR LEITURA MAS NO FINAL DO DIA. EXAMES OK. DIABETES E PA CONTROLADA COM MEDICAMENTO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">SONIA MARIA DE SOUZA</td>
+<td align="left" width="98" colspan="1" class="datap">47 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VL E VP. SENTE CEFALÉIA NÃO FREQUENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ERNA GORISCH</td>
+<td align="left" width="98" colspan="1" class="datai">66 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 2 ANOS, LENTES EMBAÇADAS, GRAU DESCONFORTÁVEL. SENTE DIFICULDADE EM VL E VP. SENTE CEFALÉIA FREQUENTE E FOTOFOBIA. EXAMES OK.
+ÚLT GRAU +3.50-0.50*100/+4.00 AD 2.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">FRANCISCO GOMES</td>
+<td align="left" width="98" colspan="1" class="datap">67 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, PERDEU UMA LENTE E TEM DIFICULDADE EM VL E VP. SEM SINTOMAS. EXAMES OK E PA CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU +2.00-0.50*90/PERDEU AD 2.75</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ALTAIR TOMAZ DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">57 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 1 ANO, FEZ MULTIFOCAL MAS USA MAIS PRA PERTO. ÚLTIMO GRAU INTERMEDIÁRIO. SENTE MAIS DIFICULDADE EM VP. EXAMES OK.
+NÃO TROUXE O ÚLTIMO GRAU.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">DULCE DE PAULA FREITAS LIMA</td>
+<td align="left" width="98" colspan="1" class="datap">62 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 2 ANOS, TEM ÓCULOS MULTIFOCAL MAS FAZ USO SOMENTE PRA PERTO. SENTE MAIS DIFICULDADE EM VP. LENTES RISCADAS. EXAMES OK.
+ÚLT GRAU +1.50-0.50*90/+1.75-0.50*120 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">EMILLY CARDOSO DE OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datai">5 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SEGUNDO A PACIENTE ESTÁ ENXERGANDO BEM E NÃO SENTE SINTOMAS. MÃE MARCOU PRA OLHAR SE TEM ALGUMA ALTERAÇÃO. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">14/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">NASSANA VALÉRIA STREME PAULA</td>
+<td align="left" width="98" colspan="1" class="datap">21 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZIA USO CONTÍNUO E PERDEU HÁ 6 MESES, SENTE MAIS DIFICULDADE EM VL. SENTE CEFALÉIA FREQUENTE. TRABALHA NO PC O DIA TODO. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">14/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ERLEIA CRISTINA GARBIN</td>
+<td align="left" width="98" colspan="1" class="datai">28 anos</td>
+<td align="left" width="618" colspan="1" class="datai">USOU ÓCULOS QUANDO ERA CRIANÇA E NÃO USA HÁ MAIS DE 15 ANOS, SENTE DIFICULDADE EM VL E VP, FOTOFOBIA, CEFALÉIA FREQUENTE E ARDÊNCIA. EXAMES OK. TTO ANSIEDADE COM DIAZEPAN E FLUOXETINA. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">15/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JOSÉ MASSIGNANI</td>
+<td align="left" width="98" colspan="1" class="datap">61 anos</td>
+<td align="left" width="618" colspan="1" class="datap">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VP, SENTE CEFALÉIA AO FORÇAR. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">15/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">NOILI TEREZINHA GONÇALVES VOLPATTO</td>
+<td align="left" width="98" colspan="1" class="datai">60 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO PRA VL E VP. EXAMES OK. ROTINA. PACIENTE ADEZIR, RELATOU TER PERDIDO A VISÃO NO OD POR ANEURISMA.
+ÚLT GRAU +2.50(PESO)/+3.00-1.75*180 AD 2,50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">15/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">FELIPE DE BRITTO ORTH</td>
+<td align="left" width="98" colspan="1" class="datap">26 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 4 ANOS, NÃO ESTA FAZENDO USO DE CORREÇÃO, ENXERGA BEM MAS SENTE CANSAÇO NOS OLHOS E EMBAÇA AO FOCAR. SENTE CEFALÉIA FREQUENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">15/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ZELIA MARSON DOS SANTOS BORGES</td>
+<td align="left" width="98" colspan="1" class="datai">74 anos/ 75 anos</td>
+<td align="left" width="618" colspan="1" class="datai">15/12/2020 - ÚLT CONSULTA HÁ + 2 ANOS, PERDEU O ÓCULOS HÁ 1 SEMANA E SENTE MAIS DIFICULDADE EM VP, USAVA SOMENTE PERTO. EXAMES OK. PA CONTROLADA COM MEDICAMENTO. SENTE CEFALÉIA FREQUENTE.
+
+22/07/22 - ÚLT CONSULTA HÁ QUASE 2 ANOS, QUEBROU O ÓCULOS HÁ 6 MESES E NÃO FAZIA USO CONTÍNUO, MAIS PRA PERTO. DIFICULDADE AGORA EM VL E VP. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU +2.00-0.75*70/+2.00-0.50*60 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">15/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">KELLY TAIS GATTI ANTUNES</td>
+<td align="left" width="98" colspan="1" class="datap">22 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO PRA LONGE. SENTE CEFALÉIA SEM RX. EXMAES OK.
+ÚLT GRAU -0.25-0.25*75/-0.25-0.25*105</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">15/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ELIZABETE NUNES</td>
+<td align="left" width="98" colspan="1" class="datai">37 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 4 ANOS E NÃO USA FAZ 2 ANOS. SENTE MAIS DIFICULDADE EM VL, SENTE ARDÊNCIA E CANSAÇO NOS OLHOS. CEFALÉIA FREQUENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">15/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JOCELI DE FÁTIMA RODRIGUES</td>
+<td align="left" width="98" colspan="1" class="datap">61 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 4 ANOS, QUEBROU O ÓCULOS HÁ 1 MÊS, FAZIA USO CONTÍNUO, TEM DIFICULDADE EM VL E VP. EXAMES OK. DIABETES MAS NÃO TOMA REMÉDIO CONTROLADO.
+ÚLT GRAU OD QUEBROU/+0.50-0.75*100 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">15/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">DANIELE BORGES DE OLIVEIRA</td>
+<td align="left" width="98" colspan="1" class="datai">30 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE DIFICULDADE PRA ENXERGAR DE LONGE HÁ 1 ANO, DE PERTO OK. FILHO USA CORREÇÃO CONTÍNUO. EXAMES OK. CEFALÉIA AO FORÇAR.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">15/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARIA DE NAZARÉ ANDRADE SAMPAIO</td>
+<td align="left" width="98" colspan="1" class="datap">47 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 5 ANOS, NÃO FAZ USO CONTÍNUO, TEM UMA CORREÇÃO PRA PERTO MAS NÃO TROUXE. NÃO TROUXE ÓCULOS ANTIGO. CEFALÉIA SE FORÇAR A VISÃO. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">15/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">THIEZA RAFAELA RIBEIRO COSTA</td>
+<td align="left" width="98" colspan="1" class="datai">21 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO DE ÓCULOS E LC, SENTE MAIS DIFICULDADE EM VL. SENTE CEFALÉIA NÃO FREQUENTE. EXAMES OK.
+ÚLT GRAU -2.25-0.25*10/-1.50-0.50*15</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">15/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">CLÁUDIA DE SOUSA SOBRAL</td>
+<td align="left" width="98" colspan="1" class="datap">36 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 3 ANOS, FAZIA USO CONTÍNUO MAS PERDEU HÁ + 1 ANO, SENTE DIFICULDADE EM VL E VP. EXAMES OK. SENTE CEFALÉIA FREQUENTE.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">15/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ELIZIANE MOREIRA GARCIAS</td>
+<td align="left" width="98" colspan="1" class="datai">31 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 3 ANOS, FAZ USO CONTÍNUO NO TRABALHO, ESTÁ SENTINDO O GRAU DESCONFORTÁVEL E EMBAÇADO PRA LONGE E PERTO. SENTE CEFALÉIA NÃO FREQUENTE. EXAMES OK.
+ÚLT GRAU 0.00-1.00*180/0.00-0.75*180</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">15/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MARTHA DOS SANTOS DA SILVA</td>
+<td align="left" width="98" colspan="1" class="datap">49 anos/52 anos</td>
+<td align="left" width="618" colspan="1" class="datap">15/12/2020 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO E LENTES ARRANHADAS, SENTE ARDÊNCIA FREQUENTE E CEFALÉIA NÃO FREQUENTE. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU +3.50-0.50*45/+3.75-0.50*135 AD 1.75
+
+13/03/23 - ÚLT CONSULTA HÁ + 2 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU CONFORTÁVEL, LENTES ARRANHADAS. SEM SINTOMAS. EXAMES OK. PA CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU +4.00-0.75*50/+4.00-0.50*145 AD 2.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">16/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">DEISIELI JESUS</td>
+<td align="left" width="98" colspan="1" class="datai">21 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ + 10 ANOS, NÃO ESTA FAZENDO USO DE CORREÇÃO, SENTE DIFICULDADE EM VL E VP HÁ UNS 4 MESES, EMBARALHA A VISÃO. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">16/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">DÉBORA ALBUQUERQUE DOS ANJOS</td>
+<td align="left" width="98" colspan="1" class="datap">24 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 10 ANOS, NÃO ESTA FAZENDO USO DE CORREÇÃO, SENTE MAIS CANSAÇO VISUAL E DIFICULDADE MAIOR PRA LONGE. CEFALÉIA FREQUENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">16/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ROSIMERE ALBUQUERQUE DOS ANJOS</td>
+<td align="left" width="98" colspan="1" class="datai">52 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE MAIS DIFICULDADE EM VP E PRA LONGE LEVEMENTE FRACO. EXAMES OK. SEM SINTOMAS. </td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">16/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">GESSI CAMPOS DE RAMOS</td>
+<td align="left" width="98" colspan="1" class="datap">58 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 1 ANO, NÃO FAZ USO CONTÍNUO, MAIS PRA PERTO. SENTE O GRAU FRACO PRA PERTO. EXAMES OK. COLESTEROL EM TTO. CEFALÉIA NÃO FREQUENTE.
+ÚLT GRAU +0.25/+0.25-0.50*120 AD 2.50</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">16/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">KAROLAINE RODRIGUES</td>
+<td align="left" width="98" colspan="1" class="datai">23 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZIA USO CONTÍNUO MAS ESTÁ HÁ 9 MESES SEM USAR (QUEBROU). SENTE MAIS DIFICULDADE EM VL. SENTE CEFALÉIA NÃO FREQUENTE. EXAMES OK.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">16/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">MIRIANE DA SILVA SERAFINI</td>
+<td align="left" width="98" colspan="1" class="datap">34 anos/36 anos</td>
+<td align="left" width="618" colspan="1" class="datap">16/12/2020 - ÚLT CONSULTA HÁ 3 ANOS, FAZ USO CONTINUO E SENTE MAIS DIFICULDADE EM VL, SENTE O GRAU FRACO. SEM SINTOMAS. USO FREQUENTE DE CELULAR E PC. EXAMES OK.
+ÚLT GRAU -0.75-0.75*175*-0.75-1.00*10
+
+21/12/2022 - ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E ESTÁ SENTINDO O GRAU LEVEMENTE MAIS FRACO. SEM SINTOMAS. EXAMES OK.
+ÚLT GRAU -1.50-0.25*170/-1.50-1.25*10</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">16/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">RAFAELA DOS SANTOS SILVA</td>
+<td align="left" width="98" colspan="1" class="datai">24 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 2 ANOS, FAZ USO CONTÍNUO E SENTE CEFALÉIA QUANDO NÃO USA RX, SENTE O GRAU FRACO. EXAMES OK. MAIS DIFICULDADE EM VL.
+ÚLT GRAU 0.00-0.50*180/0.00-0.25*175</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">17/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">JASMIN TESSARI DOS SANTOS LOPES</td>
+<td align="left" width="98" colspan="1" class="datap">14 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ 2 ANOS, NÃO ESTA FAZENDO USO DA CORREÇÃO, TINHA SIDO ENCAMINHADA PRA OFTALMO PRA DESENTUPIR GLÂNDULA MAS NÃO FOI CHAMADA ATÉ AGORA. SENTE DIFICULDADE EM VL E VP. SENTE CEFALÉIA FREQUENTE.</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">17/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">DARCI ARTELINO DA COSTA</td>
+<td align="left" width="98" colspan="1" class="datai">77 anos</td>
+<td align="left" width="618" colspan="1" class="datai">ÚLT CONSULTA HÁ 3 ANOS, NÃO PASSOU NO EXAME DE CNH, GRAU FRACO PRA LONGE. SENTE DESCONFORTO COM O ÓCULOS. EXAMES OK. DIABETE E PA CONTROLADA COM MEDICAMENTO.
+ÚLT GRAU 0.00-1.00*90/+0.25-1.25*90 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datap">17/12/2020</td>
+<td align="left" width="348" colspan="1" class="datap">RUTH COSTA NAZARIO</td>
+<td align="left" width="98" colspan="1" class="datap">76 anos</td>
+<td align="left" width="618" colspan="1" class="datap">ÚLT CONSULTA HÁ + 3 ANOS, FAZ USO CONTÍNUO E SENTE O GRAU FRACO E LENTES ARRANHADAS. EXAMES OK. PA CONTROLADA COM MEDICAMENTO. ESTÁ SENTINDO MAIS CEFALÉIA NOS ULTIMOS DIAS.
+ÚLT GRAU +3.25/+2.75-0.50*45 AD 3.00</td>
+</tr>
+<tr>
+<td align="left" width="88" colspan="1" class="datai">17/12/2020</td>
+<td align="left" width="348" colspan="1" class="datai">ANDERSON PAIXÃO COSTA</td>
+<td align="left" width="98" colspan="1" class="datai">27 anos</td>
+<td align="left" width="618" colspan="1" class="datai">PRIMEIRA CONSULTA, SENTE DIFICULDADE EM VL HÁ 1 ANO. EXAMES OK. CEFALÉIA NÃO FREQUENTE E ARDÊNCIA.</td>
+</tr>
+<tr>
+<td align="center" width="88" colspan="1" class="total"></td>
+<td align="center" width="348" colspan="1" class="total"></td>
+<td align="center" width="98" colspan="1" class="total"></td>
+<td align="left" width="618" colspan="1" class="total">409</td>
+</tr>
+</table>
+</html>
